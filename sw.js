@@ -1,5 +1,5 @@
 // Service Worker para Jsh3lby Portfolio
-const CACHE_NAME = 'Jsh3lby-v1.0.2';
+const CACHE_NAME = 'Jsh3lby-v1.0.3';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -17,6 +17,7 @@ const urlsToCache = [
 
 // Instalación del service worker
 self.addEventListener('install', (event) => {
+  self.skipWaiting();
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then((cache) => {
@@ -27,6 +28,27 @@ self.addEventListener('install', (event) => {
 
 // Interceptar requests
 self.addEventListener('fetch', (event) => {
+  const requestUrl = new URL(event.request.url);
+  const isSameOrigin = requestUrl.origin === self.location.origin;
+  const isLayoutAsset = /\.(html|css|js)$/i.test(requestUrl.pathname);
+
+  if (isSameOrigin && isLayoutAsset) {
+    event.respondWith(
+      fetch(event.request)
+        .then((response) => {
+          if (response && response.ok) {
+            const responseToCache = response.clone();
+            caches.open(CACHE_NAME).then((cache) => {
+              cache.put(event.request, responseToCache);
+            });
+          }
+          return response;
+        })
+        .catch(() => caches.match(event.request))
+    );
+    return;
+  }
+
   event.respondWith(
     caches.match(event.request)
       .then((response) => {
@@ -68,6 +90,6 @@ self.addEventListener('activate', (event) => {
           }
         })
       );
-    })
+    }).then(() => self.clients.claim())
   );
 });
