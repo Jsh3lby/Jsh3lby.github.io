@@ -1,8 +1,9 @@
-// Service Worker para th3herrera Portfolio
-const CACHE_NAME = 'th3herrera-v1.0.0';
+// Service Worker para Jsh3lby Portfolio
+const CACHE_NAME = 'Jsh3lby-v1.0.2';
 const urlsToCache = [
   '/',
   '/index.html',
+  '/hacker/index.html',
   '/CSS/styles.css',
   '/CSS/header.css',
   '/assets/scripts/menu.js',

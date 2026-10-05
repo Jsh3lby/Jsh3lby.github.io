@@ -9,6 +9,20 @@ window.addEventListener('load', function() {
     
     const themeToggle = document.getElementById('theme-toggle');
     const html = document.documentElement;
+    const THEME_LABELS = {
+        es: {
+            toLight: 'Cambiar a tema claro',
+            toDark: 'Cambiar a tema oscuro'
+        },
+        en: {
+            toLight: 'Switch to light theme',
+            toDark: 'Switch to dark theme'
+        },
+        fr: {
+            toLight: 'Passer au theme clair',
+            toDark: 'Passer au theme sombre'
+        }
+    };
     
     if (!themeToggle) {
         console.error('❌ Botón theme-toggle no encontrado');
@@ -16,6 +30,19 @@ window.addEventListener('load', function() {
     }
     
     console.log('✅ Botón theme-toggle encontrado');
+
+    function getCurrentLanguage() {
+        const storedLanguage = localStorage.getItem('portfolio-language');
+        const lang = (storedLanguage || html.getAttribute('lang') || 'es').toLowerCase().split('-')[0];
+        return THEME_LABELS[lang] ? lang : 'es';
+    }
+
+    function updateThemeAriaLabel(theme) {
+        const language = getCurrentLanguage();
+        const labels = THEME_LABELS[language] || THEME_LABELS.es;
+        const ariaLabel = theme === 'dark' ? labels.toLight : labels.toDark;
+        themeToggle.setAttribute('aria-label', ariaLabel);
+    }
     
     // Función para aplicar tema
     function setTheme(theme) {
@@ -34,14 +61,14 @@ window.addEventListener('load', function() {
                     // Tema oscuro = mostrar sol (para cambiar a claro)
                     moonIcon.style.display = 'none';
                     sunIcon.style.display = 'block';
-                    themeToggle.setAttribute('aria-label', 'Cambiar a tema claro');
                 } else {
                     // Tema claro = mostrar luna (para cambiar a oscuro)
                     moonIcon.style.display = 'block';
                     sunIcon.style.display = 'none';
-                    themeToggle.setAttribute('aria-label', 'Cambiar a tema oscuro');
                 }
             }
+
+            updateThemeAriaLabel(theme);
             
             // 3. Guardar en localStorage
             localStorage.setItem('portfolio-theme', theme);
@@ -94,6 +121,11 @@ window.addEventListener('load', function() {
     const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
     console.log(`📂 Cargando tema guardado: ${savedTheme}`);
     setTheme(savedTheme);
+
+    window.addEventListener('portfolio:language-changed', () => {
+        const currentTheme = html.getAttribute('data-theme') || 'dark';
+        updateThemeAriaLabel(currentTheme);
+    });
     
     console.log('🚀 Theme Switcher v4.1 listo y funcionando!');
 });

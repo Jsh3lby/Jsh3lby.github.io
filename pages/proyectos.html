@@ -29,36 +29,37 @@
     @media screen and (max-width: 768px) {
       /* Navegación móvil mejorada */
       nav {
-        background: rgba(30, 58, 138, 0.95) !important;
-        border-bottom: 1px solid rgba(230, 173, 34, 0.2) !important;
+        background: var(--inner-bg) !important;
+        border-bottom: 1px solid var(--inner-line) !important;
         backdrop-filter: blur(20px) !important;
         -webkit-backdrop-filter: blur(20px) !important;
-        box-shadow: 0 2px 20px rgba(0,0,0,0.2) !important;
+        box-shadow: none !important;
       }
       
       [data-theme="dark"] nav {
-        background: rgba(15, 23, 42, 0.95) !important;
-        border-bottom: 1px solid rgba(230, 173, 34, 0.2) !important;
+        background: var(--inner-bg) !important;
+        border-bottom: 1px solid var(--inner-line) !important;
       }
       
       /* Asegurar que el texto se vea bien en fondo azul */
       nav .nav-brand .logo {
-        color: white !important;
+        color: var(--inner-ink) !important;
       }
       
       nav .theme-btn {
-        color: white !important;
+        color: var(--inner-ink) !important;
       }
       
       nav .theme-btn:hover {
-        background: rgba(255, 255, 255, 0.1) !important;
+        background: var(--inner-accent) !important;
       }
       
       .hamburger span {
-        background: #E6AD22 !important;
+        background: var(--inner-accent) !important;
       }
     }
   </style>
+  <link rel="stylesheet" href="inner-theme.css">
 </head>
 <body class="projects-page">
   <nav>
@@ -121,24 +122,23 @@
       <div class="hero-container">
         <div class="hero-badge">
           <span>💼</span>
-          <span>Portfolio de Proyectos</span>
+          <span>Portfolio técnico</span>
         </div>
         
         <h1 class="hero-title">Mis Proyectos</h1>
         
         <p class="hero-subtitle">
-          Explora mi colección de proyectos en ciberseguridad, desarrollo técnico y diseño creativo. 
-          Cada proyecto representa un paso en mi evolución profesional y técnica.
+          Una selección de proyectos terminados sobre ciberseguridad, sistemas y desarrollo web.
         </p>
         
         <div class="hero-stats">
           <div class="stat-item">
-            <span class="stat-number">7+</span>
+            <span class="stat-number">5</span>
             <span class="stat-label">Proyectos</span>
           </div>
           <div class="stat-item">
-            <span class="stat-number">6</span>
-            <span class="stat-label">Tecnologías</span>
+            <span class="stat-number">3</span>
+            <span class="stat-label">Áreas</span>
           </div>
           <div class="stat-item">
             <span class="stat-number">100%</span>
@@ -162,129 +162,59 @@
     <section id="projects" class="projects-section">
       <div class="section-content">
         <div class="section-header">
-          <h2 class="section-title">Portfolio Técnico</h2>
-          <p class="section-subtitle">
-            Proyectos clasificados por tecnología y área de especialización
-          </p>
-        </div>
-        
-        <div class="tag-cloud" role="group" aria-label="Filtrar proyectos por etiquetas">
-          <span class="tag active" data-filter="all">Todos</span>
-          <span class="tag" data-filter="ciberseguridad">Ciberseguridad</span>
-          <span class="tag" data-filter="python">Python</span>
-          <span class="tag" data-filter="sql">SQL</span>
-          <span class="tag" data-filter="bash">Bash</span>
-          <span class="tag" data-filter="linux">Linux</span>
-          <span class="tag" data-filter="web">Web</span>
-          <span class="tag" data-filter="videojuego">Videojuegos</span>
+          <h2 class="section-title">Proyectos seleccionados</h2>
+          <p class="section-subtitle">Trabajo documentado y disponible para explorar</p>
         </div>
         
         <div class="project-grid">
-          <div class="project-card" data-tags="ciberseguridad linux bash">
-            <div class="project-badge">Destacado</div>
-            <h3>🔐 Guía de Niveles Bandit</h3>
-            <p>Documentación completa del challenge Bandit de OverTheWire. Tutorial paso a paso que cubre 34 niveles progresivos de seguridad Linux, desde comandos básicos hasta técnicas avanzadas de penetration testing.</p>
+          <a class="project-card" data-tags="ciberseguridad linux" href="Proyectos/bandit.html" aria-label="Ver proyecto Guía de Niveles Bandit">
+            <h3>Guía de Niveles Bandit</h3>
             <div class="tech-tags">
               <span>Ciberseguridad</span>
               <span>Linux</span>
-              <span>Bash</span>
-              <span>CTF</span>
             </div>
-            <a href="Proyectos/bandit.html" class="cta-button" aria-label="Ver proyecto de Bandit">
-              📖 Ver Documentación
-            </a>
-          </div>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </a>
 
-          <div class="project-card" data-tags="web html css">
-            <div class="project-badge">Destacado</div>
-            <h3>🌐 Mi Página Web</h3>
-            <p>Documentación completa del proceso de creación de este portfolio web. Desde el diseño conceptual hasta la implementación final, incluyendo decisiones técnicas, arquitectura y mejores prácticas.</p>
+          <a class="project-card" data-tags="web html" href="Proyectos/mi-pagina-web.html" aria-label="Ver proyecto Mi Página Web">
+            <h3>Mi Página Web</h3>
             <div class="tech-tags">
+              <span>Web</span>
               <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-              <span>Web Design</span>
             </div>
-            <a href="Proyectos/mi-pagina-web.html" class="cta-button" aria-label="Ver proyecto Mi Página Web">
-              📖 Ver Documentación
-            </a>
-          </div>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </a>
           
-          <div class="project-card" data-tags="ciberseguridad bash linux">
-            <h3>🔍 Escáner de Puertos en Bash</h3>
-            <p>Herramienta educativa para detectar puertos abiertos en hosts individuales y redes completas. Desarrollada completamente en Bash usando /dev/tcp, sin dependencias externas.</p>
+          <a class="project-card" data-tags="ciberseguridad bash" href="Proyectos/port-scanner.html" aria-label="Ver proyecto Escáner de Puertos en Bash">
+            <h3>Escáner de Puertos en Bash</h3>
             <div class="tech-tags">
               <span>Ciberseguridad</span>
               <span>Bash</span>
-              <span>Networking</span>
-              <span>Security Tools</span>
             </div>
-            <a href="Proyectos/port-scanner.html" class="cta-button" aria-label="Ver proyecto de Escáner de Puertos">
-              🛠️ Ver Herramienta
-            </a>
-          </div>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </a>
           
-          <div class="project-card" data-tags="ciberseguridad python sql">
-            <h3>🛡️ Filtros SQL Seguros</h3>
-            <p>Sistema robusto de protección contra inyecciones SQL para aplicaciones web. Incluye validación de entrada, sanitización de consultas y logging de seguridad.</p>
+          <a class="project-card" data-tags="ciberseguridad sql" href="Proyectos/sql-filters.html" aria-label="Ver proyecto Filtros SQL Seguros">
+            <h3>Filtros SQL Seguros</h3>
             <div class="tech-tags">
               <span>Ciberseguridad</span>
               <span>SQL</span>
-              <span>Python</span>
-              <span>Web Security</span>
             </div>
-            <a href="Proyectos/sql-filters.html" class="cta-button" aria-label="Ver proyecto de Filtros SQL Seguros">
-              🔒 Ver Proyecto
-            </a>
-          </div>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </a>
           
-          <div class="project-card" data-tags="linux bash">
-            <h3>⚙️ Gestor de Permisos Linux</h3>
-            <p>Conjunto de scripts especializados para automatización y auditoría de permisos en entornos Linux empresariales. Incluye detección de configuraciones inseguras y reportes de compliance.</p>
+          <a class="project-card" data-tags="linux bash" href="Proyectos/linux-permissions.html" aria-label="Ver proyecto Gestor de Permisos Linux">
+            <h3>Gestor de Permisos Linux</h3>
             <div class="tech-tags">
               <span>Linux</span>
               <span>Bash</span>
-              <span>System Admin</span>
-              <span>Automation</span>
             </div>
-            <a href="Proyectos/linux-permissions.html" class="cta-button" aria-label="Ver proyecto de Gestor de Permisos Linux">
-              🔧 Ver Scripts
-            </a>
-          </div>
-          
-          <div class="project-card" data-tags="videojuego python">
-            <div class="project-badge">En Desarrollo</div>
-            <h3>🎮 Videojuego Personalizado</h3>
-            <p>Desarrollo de un videojuego completo en Python usando Pygame. Incluye diseño de mecánicas innovadoras, gráficos personalizados y sistema de física básica con arquitectura modular.</p>
-            <div class="tech-tags">
-              <span>Python</span>
-              <span>Pygame</span>
-              <span>Game Design</span>
-              <span>Graphics</span>
-            </div>
-            <a href="#" class="cta-button" aria-label="Proyecto en desarrollo - Videojuego">
-              ⏳ En Progreso
-            </a>
-          </div>
-          
-          <div class="project-card" data-tags="ciberseguridad python">
-            <div class="project-badge">En Desarrollo</div>
-            <h3>🚀 Herramienta de Seguridad Avanzada</h3>
-            <p>Desarrollo de una herramienta especializada en Python para análisis de seguridad y automatización de procesos de ciberseguridad. Actualmente en fase de conceptualización y diseño arquitectónico.</p>
-            <div class="tech-tags">
-              <span>Python</span>
-              <span>Ciberseguridad</span>
-              <span>Security Tools</span>
-              <span>Automation</span>
-            </div>
-            <a href="#" class="cta-button" aria-label="Proyecto en desarrollo - Herramienta de Seguridad">
-              🔬 En Investigación
-            </a>
-          </div>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </a>
         </div>
 
         <div class="cta-section">
-          <p>¿Interesado en colaborar o conocer más detalles sobre algún proyecto?</p>
+          <p>¿Quieres conocer más detalles sobre algún proyecto?</p>
           <a href="archivo.html" class="cta-button" aria-label="Explorar el archivo completo de proyectos">
             📚 Ver Archivo Completo
           </a>
@@ -300,66 +230,5 @@
   <script src="../assets/scripts/menu.js" defer></script>
   <script src="../assets/scripts/theme-switcher.js" defer></script>
   <script src="../assets/scripts/scroll-effects.js" defer></script>
-  <script>
-    // Filtro de proyectos por etiquetas con animaciones suaves
-    document.addEventListener('DOMContentLoaded', function() {
-      const tags = document.querySelectorAll('.tag');
-      const cards = document.querySelectorAll('.project-card');
-
-      tags.forEach(tag => {
-        tag.addEventListener('click', function() {
-          const filter = this.getAttribute('data-filter').toLowerCase();
-          
-          // Actualizar tags activos
-          tags.forEach(t => t.classList.remove('active'));
-          this.classList.add('active');
-          
-          // Animar filtrado
-          cards.forEach((card, index) => {
-            const cardTags = card.getAttribute('data-tags').toLowerCase();
-            const shouldShow = filter === 'all' || cardTags.includes(filter);
-            
-            if (shouldShow) {
-              setTimeout(() => {
-                card.style.display = 'block';
-                card.style.opacity = '1';
-                card.style.transform = 'translateY(0)';
-              }, index * 100);
-            } else {
-              card.style.opacity = '0';
-              card.style.transform = 'translateY(20px)';
-              setTimeout(() => {
-                card.style.display = 'none';
-              }, 300);
-            }
-          });
-        });
-      });
-
-      // Prefiltrar según parámetro URL
-      const urlParams = new URLSearchParams(window.location.search);
-      const tag = urlParams.get('tag')?.toLowerCase();
-      if (tag) {
-        const activeTag = document.querySelector(`.tag[data-filter="${tag}"]`);
-        if (activeTag) {
-          activeTag.click();
-        }
-      }
-
-      // Animaciones de entrada al scroll
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-          }
-        });
-      }, { threshold: 0.1 });
-
-      cards.forEach(card => {
-        observer.observe(card);
-      });
-    });
-  </script>
 </body>
 </html>
