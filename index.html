@@ -81,6 +81,44 @@
   <!-- DNS Prefetch -->
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
   <link rel="dns-prefetch" href="//fonts.gstatic.com">
+
+  <!-- Critical layout styles prevent a left-aligned first paint while the main stylesheet loads. -->
+  <style>
+    .category-section > .section-content {
+      box-sizing: border-box;
+      margin-inline: auto;
+      max-width: 1180px;
+      width: 100%;
+    }
+
+    @media (min-width: 769px) {
+      #proyectos .section-header,
+      #archivo .section-header,
+      #recursos .section-header,
+      #sobre-mi .section-header {
+        align-items: center;
+        display: block;
+        text-align: center;
+      }
+
+      #proyectos .section-title,
+      #archivo .section-title,
+      #recursos .section-title,
+      #sobre-mi .section-title {
+        margin-inline: auto;
+        text-align: center;
+      }
+
+      #proyectos .section-subtitle,
+      #archivo .section-subtitle,
+      #recursos .section-subtitle,
+      #sobre-mi .section-subtitle {
+        margin-inline: auto;
+        max-width: 620px;
+        text-align: center;
+      }
+    }
+  </style>
   
   <!-- Resource Hints -->
   <link rel="prefetch" href="pages/proyectos.html">
