@@ -279,12 +279,6 @@ class HackerEffects {
 document.addEventListener('DOMContentLoaded', () => {
     const hackerFX = new HackerEffects();
     
-    // Show boot sequence on first visit
-    if (!sessionStorage.getItem('banditVisited')) {
-        hackerFX.displayBootSequence();
-        sessionStorage.setItem('banditVisited', 'true');
-    }
-    
     // Initialize Konami code
     hackerFX.initKonamiCode();
     

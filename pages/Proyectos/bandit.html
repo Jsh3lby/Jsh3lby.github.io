@@ -81,13 +81,11 @@
     <section class="hero-section" style="height: 100vh; min-height: 100vh; max-height: 100vh; margin: 0; padding: 0;">
       <div class="hero-container animate-fade-in">
         <div class="hero-badge animate-delay-2">
-          <span>🛡️</span>
           <span>Cybersecurity Challenge</span>
         </div>
         
         <h1 class="hero-title animate-delay-2">
-          <span class="title-highlight" style="color: #23f444;">OverTheWire</span>
-          <span class="title-main">Bandit</span>
+          OverTheWire Bandit
         </h1>
         
         <p class="hero-subtitle animate-delay-3">
@@ -116,7 +114,7 @@
             <span>→</span>
           </a>
           <a href="https://github.com/jsh3lby/bandit-ctf-solutions" target="_blank" rel="noopener noreferrer" class="hero-cta secondary">
-            <span>📁 GitHub</span>
+            <span>GitHub</span>
           </a>
         </div>
       </div>
@@ -267,21 +265,21 @@
           </div>
           <div class="level-content" id="level-00">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>Conectarse al juego usando SSH. El host es bandit.labs.overthewire.org, puerto 2220, usuario bandit0 y contraseña bandit0.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('ssh bandit0@bandit.labs.overthewire.org -p 2220')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('ssh bandit0@bandit.labs.overthewire.org -p 2220')">Copiar</button>
                 </div>
                 <pre><code>ssh bandit0@bandit.labs.overthewire.org -p 2220</code></pre>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p>Este es el punto de entrada al CTF. SSH (Secure Shell) es un protocolo de red criptográfico para conexiones seguras a sistemas remotos.</p>
             </div>
           </div>
@@ -301,28 +299,28 @@
           </div>
           <div class="level-content" id="level-0">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>La contraseña para el siguiente nivel está almacenada en un archivo llamado 'readme' en el directorio home.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('pwd\nls\ncat readme')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('pwd\nls\ncat readme')">Copiar</button>
                 </div>
                 <pre><code>pwd          # Ver ubicación actual
 ls           # Listar archivos
 cat readme   # Leer contenido del archivo</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If</span>
-                <button class="copy-btn" onclick="copyToClipboard('ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <ul>
                 <li><code>pwd</code>: Muestra el directorio de trabajo actual</li>
                 <li><code>ls</code>: Lista los archivos y directorios</li>
@@ -346,26 +344,26 @@ cat readme   # Leer contenido del archivo</code></pre>
           </div>
           <div class="level-content" id="level-1">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>La contraseña está en un archivo llamado '-' en el directorio home.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('cat ./-')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('cat ./-')">Copiar</button>
                 </div>
                 <pre><code>cat ./-</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">263JGJPfgU6LtdEvgfWU1XP5yac29mFx</span>
-                <button class="copy-btn" onclick="copyToClipboard('263JGJPfgU6LtdEvgfWU1XP5yac29mFx')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('263JGJPfgU6LtdEvgfWU1XP5yac29mFx')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p>El guión '-' tiene significado especial en Unix (representa stdin/stdout). Para leer un archivo con este nombre, usamos './-' especificando la ruta relativa.</p>
             </div>
           </div>
@@ -385,11 +383,11 @@ cat readme   # Leer contenido del archivo</code></pre>
           </div>
           <div class="level-content" id="level-2">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>La contraseña está en un archivo llamado 'spaces in this filename'.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>>
@@ -397,13 +395,13 @@ cat readme   # Leer contenido del archivo</code></pre>
                 <pre><code>cat "spaces in this filename"</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx</span>
-                <button class="copy-btn" onclick="copyToClipboard('MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p>Los espacios en nombres de archivo requieren comillas dobles o simples para ser interpretados como un solo argumento por la shell.</p>
             </div>
           </div>
@@ -423,28 +421,28 @@ cat readme   # Leer contenido del archivo</code></pre>
           </div>
           <div class="level-content" id="level-3">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>La contraseña está en un archivo oculto en el directorio 'inhere'.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('cd inhere\nls -la\ncat ...Hiding-From-You')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('cd inhere\nls -la\ncat ...Hiding-From-You')">Copiar</button>
                 </div>
                 <pre><code>cd inhere
 ls -la
 cat ...Hiding-From-You</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ</span>
-                <button class="copy-btn" onclick="copyToClipboard('2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p>Los archivos que comienzan con punto (.) están ocultos en sistemas Unix. La opción <code>-a</code> de <code>ls</code> muestra todos los archivos, incluyendo los ocultos.</p>
             </div>
           </div>
@@ -464,28 +462,28 @@ cat ...Hiding-From-You</code></pre>
           </div>
           <div class="level-content" id="level-4">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>La contraseña está en el único archivo legible (ASCII text) del directorio 'inhere'.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('cd inhere\nfile ./*\ncat ./-file07')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('cd inhere\nfile ./*\ncat ./-file07')">Copiar</button>
                 </div>
                 <pre><code>cd inhere
 file ./*        # Identificar tipos de archivo
 cat ./-file07   # Leer el archivo ASCII text</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw</span>
-                <button class="copy-btn" onclick="copyToClipboard('4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p>El comando <code>file</code> identifica el tipo de contenido de los archivos. Solo buscamos archivos "ASCII text" que sean legibles por humanos.</p>
             </div>
           </div>
@@ -505,27 +503,27 @@ cat ./-file07   # Leer el archivo ASCII text</code></pre>
           </div>
           <div class="level-content" id="level-5">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>Encontrar un archivo con: tamaño 1033 bytes, legible por humanos y no ejecutable.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('cd inhere\nfind . -type f -size 1033c ! -executable -exec file {} \\;')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('cd inhere\nfind . -type f -size 1033c ! -executable -exec file {} \\;')">Copiar</button>
                 </div>
                 <pre><code>cd inhere
 find . -type f -size 1033c ! -executable -exec file {} \;</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">HWasnPhtq9AVKe0dmk45nxy20cvUa6EG</span>
-                <button class="copy-btn" onclick="copyToClipboard('HWasnPhtq9AVKe0dmk45nxy20cvUa6EG')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('HWasnPhtq9AVKe0dmk45nxy20cvUa6EG')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <ul>
                 <li><code>-type f</code>: Solo archivos regulares</li>
                 <li><code>-size 1033c</code>: Exactamente 1033 bytes</li>
@@ -557,26 +555,26 @@ find . -type f -size 1033c ! -executable -exec file {} \;</code></pre>
           </div>
           <div class="level-content" id="level-6">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>Encontrar un archivo que pertenezca al usuario bandit7, grupo bandit6 y tenga 33 bytes de tamaño.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null')"></button>
                 </div>
                 <pre><code>find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj</span>
-                <button class="copy-btn" onclick="copyToClipboard('morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <ul>
                 <li><code>-user bandit7</code>: Pertenece al usuario bandit7</li>
                 <li><code>-group bandit6</code>: Pertenece al grupo bandit6</li>
@@ -600,26 +598,26 @@ find . -type f -size 1033c ! -executable -exec file {} \;</code></pre>
           </div>
           <div class="level-content" id="level-7">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>La contraseña está en data.txt junto a la palabra "millionth".</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('grep millionth data.txt')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('grep millionth data.txt')">Copiar</button>
                 </div>
                 <pre><code>grep millionth data.txt</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc</span>
-                <button class="copy-btn" onclick="copyToClipboard('dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p><code>grep</code> busca patrones de texto en archivos. Es fundamental para filtrar información en sistemas Linux.</p>
             </div>
           </div>
@@ -639,26 +637,26 @@ find . -type f -size 1033c ! -executable -exec file {} \;</code></pre>
           </div>
           <div class="level-content" id="level-8">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>Encontrar la única línea de texto que aparece solo una vez en data.txt.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('sort data.txt | uniq -u')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('sort data.txt | uniq -u')">Copiar</button>
                 </div>
                 <pre><code>sort data.txt | uniq -u</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">4CKMh1JI91bUIZZPXDqGanal4xvAg0JM</span>
-                <button class="copy-btn" onclick="copyToClipboard('4CKMh1JI91bUIZZPXDqGanal4xvAg0JM')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('4CKMh1JI91bUIZZPXDqGanal4xvAg0JM')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <ul>
                 <li><code>sort</code>: Ordena las líneas alfabéticamente</li>
                 <li><code>uniq -u</code>: Muestra solo líneas únicas (no duplicadas)</li>
@@ -682,26 +680,26 @@ find . -type f -size 1033c ! -executable -exec file {} \;</code></pre>
           </div>
           <div class="level-content" id="level-9">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>La contraseña está en una cadena legible precedida por varios caracteres "=".</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('strings data.txt | grep &quot;=&quot; | tail -1')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('strings data.txt | grep &quot;=&quot; | tail -1')">Copiar</button>
                 </div>
                 <pre><code>strings data.txt | grep "=" | tail -1</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey</span>
-                <button class="copy-btn" onclick="copyToClipboard('FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p><code>strings</code> extrae texto legible de archivos binarios. Útil para analizar ejecutables y archivos no texto.</p>
             </div>
           </div>
@@ -721,26 +719,26 @@ find . -type f -size 1033c ! -executable -exec file {} \;</code></pre>
           </div>
           <div class="level-content" id="level-10">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>El archivo data.txt contiene datos codificados en Base64.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('base64 -d data.txt')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('base64 -d data.txt')">Copiar</button>
                 </div>
                 <pre><code>base64 -d data.txt</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr</span>
-                <button class="copy-btn" onclick="copyToClipboard('dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p>Base64 es un sistema de codificación que convierte datos binarios en texto ASCII. La opción <code>-d</code> decodifica.</p>
             </div>
           </div>
@@ -760,26 +758,26 @@ find . -type f -size 1033c ! -executable -exec file {} \;</code></pre>
           </div>
           <div class="level-content" id="level-11">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>El texto está cifrado con ROT13 (rotación de 13 posiciones en el alfabeto).</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('cat data.txt | tr &quot;a-zA-Z&quot; &quot;n-za-mN-ZA-M&quot;')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('cat data.txt | tr &quot;a-zA-Z&quot; &quot;n-za-mN-ZA-M&quot;')">Copiar</button>
                 </div>
                 <pre><code>cat data.txt | tr "a-zA-Z" "n-za-mN-ZA-M"</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4</span>
-                <button class="copy-btn" onclick="copyToClipboard('7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p>ROT13 es un cifrado Caesar simple. <code>tr</code> traduce caracteres: cada letra se desplaza 13 posiciones en el alfabeto.</p>
             </div>
           </div>
@@ -807,15 +805,15 @@ find . -type f -size 1033c ! -executable -exec file {} \;</code></pre>
           </div>
           <div class="level-content" id="level-12">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>Un hexdump de un archivo comprimido múltiples veces con diferentes algoritmos.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('mktemp -d\ncp data.txt /tmp/workdir/\nxxd -r data.txt > compressed_data\nfile compressed_data')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('mktemp -d\ncp data.txt /tmp/workdir/\nxxd -r data.txt > compressed_data\nfile compressed_data')"></button>
                 </div>
                 <pre><code>mktemp -d
 cp data.txt /tmp/workdir/
@@ -824,13 +822,13 @@ file compressed_data
 # Repetir: mv, gzip -d, bzip2 -d, tar -xf...</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn</span>
-                <button class="copy-btn" onclick="copyToClipboard('FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p>Proceso iterativo de identificación y descompresión: gzip, bzip2, tar. <code>file</code> identifica el tipo de compresión.</p>
             </div>
           </div>
@@ -850,27 +848,27 @@ file compressed_data
           </div>
           <div class="level-content" id="level-13">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>Usar una clave SSH privada para conectarse a bandit14.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('ssh -i sshkey.private bandit14@localhost -p 2220')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('ssh -i sshkey.private bandit14@localhost -p 2220')">Copiar</button>
                 </div>
                 <pre><code>ssh -i sshkey.private bandit14@localhost -p 2220
 cat /etc/bandit_pass/bandit14</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS</span>
-                <button class="copy-btn" onclick="copyToClipboard('MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p>Autenticación SSH con clave privada. <code>-i</code> especifica el archivo de identidad (clave privada).</p>
             </div>
           </div>
@@ -890,26 +888,26 @@ cat /etc/bandit_pass/bandit14</code></pre>
           </div>
           <div class="level-content" id="level-14">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>Enviar la contraseña actual al puerto 30000 en localhost.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('echo &quot;MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS&quot; | nc localhost 30000')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('echo &quot;MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS&quot; | nc localhost 30000')">Copiar</button>
                 </div>
                 <pre><code>echo "MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS" | nc localhost 30000</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo</span>
-                <button class="copy-btn" onclick="copyToClipboard('8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p><code>netcat (nc)</code> es la "navaja suiza" de las redes. Permite conexiones TCP/UDP y transferencia de datos.</p>
             </div>
           </div>
@@ -929,26 +927,26 @@ cat /etc/bandit_pass/bandit14</code></pre>
           </div>
           <div class="level-content" id="level-15">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>Enviar la contraseña al puerto 30001 usando cifrado SSL/TLS.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('echo &quot;8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo&quot; | openssl s_client -connect localhost:30001 -quiet')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('echo &quot;8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo&quot; | openssl s_client -connect localhost:30001 -quiet')">Copiar</button>
                 </div>
                 <pre><code>echo "8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo" | openssl s_client -connect localhost:30001 -quiet</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx</span>
-                <button class="copy-btn" onclick="copyToClipboard('kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p>OpenSSL permite conexiones seguras cifradas. <code>s_client</code> actúa como cliente SSL/TLS.</p>
             </div>
           </div>
@@ -968,15 +966,15 @@ cat /etc/bandit_pass/bandit14</code></pre>
           </div>
           <div class="level-content" id="level-16">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>Encontrar el puerto correcto entre 31000-32000 que acepta SSL y devuelve una clave SSH.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('nmap -p 31000-32000 localhost\nopenssl s_client -connect localhost:31790 -quiet')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('nmap -p 31000-32000 localhost\nopenssl s_client -connect localhost:31790 -quiet')">Copiar</button>
                 </div>
                 <pre><code>nmap -p 31000-32000 localhost
 # Probar puertos SSL hasta encontrar el correcto
@@ -984,13 +982,13 @@ openssl s_client -connect localhost:31790 -quiet
 # Introducir contraseña: kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">EReVavePLFHtFlFsjn3hyzMlvSuSAcRD</span>
-                <button class="copy-btn" onclick="copyToClipboard('EReVavePLFHtFlFsjn3hyzMlvSuSAcRD')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('EReVavePLFHtFlFsjn3hyzMlvSuSAcRD')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p>Combina escaneo de puertos con <code>nmap</code> y pruebas SSL. El servidor correcto devuelve una clave SSH privada.</p>
             </div>
           </div>
@@ -1010,26 +1008,26 @@ openssl s_client -connect localhost:31790 -quiet
           </div>
           <div class="level-content" id="level-17">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>Encontrar la diferencia entre passwords.old y passwords.new.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('diff passwords.old passwords.new')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('diff passwords.old passwords.new')">Copiar</button>
                 </div>
                 <pre><code>diff passwords.old passwords.new</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO</span>
-                <button class="copy-btn" onclick="copyToClipboard('x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p><code>diff</code> compara archivos línea por línea. Muestra las diferencias con > y < indicando qué archivo contiene cada línea.</p>
             </div>
           </div>
@@ -1057,26 +1055,26 @@ openssl s_client -connect localhost:31790 -quiet
           </div>
           <div class="level-content" id="level-18">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>El .bashrc está modificado para cerrar la sesión. Ejecutar comando antes del cierre.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('ssh bandit18@bandit.labs.overthewire.org -p 2220 &quot;cat readme&quot;')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('ssh bandit18@bandit.labs.overthewire.org -p 2220 &quot;cat readme&quot;')">Copiar</button>
                 </div>
                 <pre><code>ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat readme"</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8</span>
-                <button class="copy-btn" onclick="copyToClipboard('cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p>SSH permite ejecutar comandos remotos sin shell interactiva, evitando la ejecución de .bashrc.</p>
             </div>
           </div>
@@ -1096,26 +1094,26 @@ openssl s_client -connect localhost:31790 -quiet
           </div>
           <div class="level-content" id="level-19">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>Usar un binario setUID para ejecutar comandos como otro usuario.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('./bandit20-do cat /etc/bandit_pass/bandit20')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('./bandit20-do cat /etc/bandit_pass/bandit20')">Copiar</button>
                 </div>
                 <pre><code>./bandit20-do cat /etc/bandit_pass/bandit20</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO</span>
-                <button class="copy-btn" onclick="copyToClipboard('0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p>SetUID permite que un programa se ejecute con permisos del propietario del archivo, no del usuario que lo ejecuta.</p>
             </div>
           </div>
@@ -1135,15 +1133,15 @@ openssl s_client -connect localhost:31790 -quiet
           </div>
           <div class="level-content" id="level-20">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>Crear un servidor que envíe la contraseña actual al cliente setUID.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('# Terminal 1:\\necho &quot;0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO&quot; | nc -l -p 1234\\n# Terminal 2:\\n./suconnect 1234')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('# Terminal 1:\\necho &quot;0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO&quot; | nc -l -p 1234\\n# Terminal 2:\\n./suconnect 1234')">Copiar</button>
                 </div>
                 <pre><code># Terminal 1:
 echo "0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO" | nc -l -p 1234
@@ -1152,13 +1150,13 @@ echo "0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO" | nc -l -p 1234
 ./suconnect 1234</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">EeoULMCra2q0dSkYj561DX7s1CpBuOBt</span>
-                <button class="copy-btn" onclick="copyToClipboard('EeoULMCra2q0dSkYj561DX7s1CpBuOBt')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('EeoULMCra2q0dSkYj561DX7s1CpBuOBt')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p>Comunicación cliente-servidor usando netcat. El servidor envía datos que el cliente setUID valida.</p>
             </div>
           </div>
@@ -1178,28 +1176,28 @@ echo "0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO" | nc -l -p 1234
           </div>
           <div class="level-content" id="level-21">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>Analizar trabajos cron para encontrar donde se almacena la contraseña.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('cat /etc/cron.d/cronjob_bandit22\ncat /usr/bin/cronjob_bandit22.sh\ncat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('cat /etc/cron.d/cronjob_bandit22\ncat /usr/bin/cronjob_bandit22.sh\ncat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv')">Copiar</button>
                 </div>
                 <pre><code>cat /etc/cron.d/cronjob_bandit22
 cat /usr/bin/cronjob_bandit22.sh
 cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv</span>
-                <button class="copy-btn" onclick="copyToClipboard('t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p>Cron ejecuta tareas programadas. Los scripts generalmente guardan resultados en archivos temporales.</p>
             </div>
           </div>
@@ -1219,27 +1217,27 @@ cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv</code></pre>
           </div>
           <div class="level-content" id="level-22">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>Analizar un script cron que genera nombres de archivo basados en el usuario.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('echo I am user bandit23 | md5sum | cut -d &quot; &quot; -f 1\\ncat /tmp/8ca319486bfbbc3663ea0fbe81326349')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('echo I am user bandit23 | md5sum | cut -d &quot; &quot; -f 1\\ncat /tmp/8ca319486bfbbc3663ea0fbe81326349')">Copiar</button>
                 </div>
                 <pre><code>echo I am user bandit23 | md5sum | cut -d " " -f 1
 cat /tmp/8ca319486bfbbc3663ea0fbe81326349</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">0Zf11ioIjMVN551jX3CmStKLYqjk54Ga</span>
-                <button class="copy-btn" onclick="copyToClipboard('0Zf11ioIjMVN551jX3CmStKLYqjk54Ga')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('0Zf11ioIjMVN551jX3CmStKLYqjk54Ga')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p>El script genera un hash MD5 del texto "I am user bandit23" para crear un nombre de archivo único.</p>
             </div>
           </div>
@@ -1259,15 +1257,15 @@ cat /tmp/8ca319486bfbbc3663ea0fbe81326349</code></pre>
           </div>
           <div class="level-content" id="level-23">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>Crear un script que sea ejecutado por cron para obtener la contraseña.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('mktemp -d\\necho &quot;#!/bin/bash\\ncat /etc/bandit_pass/bandit24 > /tmp/mypass24.txt&quot; > /var/spool/bandit24/foo/getpass.sh\\nchmod +x /var/spool/bandit24/foo/getpass.sh')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('mktemp -d\\necho &quot;#!/bin/bash\\ncat /etc/bandit_pass/bandit24 > /tmp/mypass24.txt&quot; > /var/spool/bandit24/foo/getpass.sh\\nchmod +x /var/spool/bandit24/foo/getpass.sh')"></button>
                 </div>
                 <pre><code>mktemp -d
 echo "#!/bin/bash
@@ -1277,13 +1275,13 @@ chmod +x /var/spool/bandit24/foo/getpass.sh
 cat /tmp/mypass24.txt</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8</span>
-                <button class="copy-btn" onclick="copyToClipboard('gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p>Escribir scripts personalizados que serán ejecutados por cron con privilegios de otro usuario.</p>
             </div>
           </div>
@@ -1311,28 +1309,28 @@ cat /tmp/mypass24.txt</code></pre>
           </div>
           <div class="level-content" id="level-24">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>Realizar fuerza bruta en un PIN de 4 dígitos en el puerto 30002.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('for i in {0000..9999}; do echo &quot;gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8 $i&quot;; done | nc localhost 30002 | grep -v &quot;Wrong&quot;')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('for i in {0000..9999}; do echo &quot;gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8 $i&quot;; done | nc localhost 30002 | grep -v &quot;Wrong&quot;')">Copiar</button>
                 </div>
                 <pre><code>for i in {0000..9999}; do 
     echo "gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8 $i"
 done | nc localhost 30002 | grep -v "Wrong"</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">iCi86ttT4KSNe1armKiwbQNmB3YJP3q4</span>
-                <button class="copy-btn" onclick="copyToClipboard('iCi86ttT4KSNe1armKiwbQNmB3YJP3q4')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('iCi86ttT4KSNe1armKiwbQNmB3YJP3q4')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p>Ataque de fuerza bruta sistemático. Se prueban todas las combinaciones posibles de 0000 a 9999.</p>
             </div>
           </div>
@@ -1352,15 +1350,15 @@ done | nc localhost 30002 | grep -v "Wrong"</code></pre>
           </div>
           <div class="level-content" id="level-25">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>Escapar de una shell restringida (more) para acceder a comandos del sistema.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('ssh bandit25@localhost -p 2220 -i bandit26.sshkey\n# En more presionar: v\n# En vim: :set shell=/bin/bash\n# En vim: :shell')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('ssh bandit25@localhost -p 2220 -i bandit26.sshkey\n# En more presionar: v\n# En vim: :set shell=/bin/bash\n# En vim: :shell')">Copiar</button>
                 </div>
                 <pre><code>ssh bandit25@localhost -p 2220 -i bandit26.sshkey
 # Redimensionar terminal para activar more
@@ -1370,13 +1368,13 @@ done | nc localhost 30002 | grep -v "Wrong"</code></pre>
 :shell</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">s0773xxkk0MXfdqOfPRVr9L3jJBUOgCZ</span>
-                <button class="copy-btn" onclick="copyToClipboard('s0773xxkk0MXfdqOfPRVr9L3jJBUOgCZ')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('s0773xxkk0MXfdqOfPRVr9L3jJBUOgCZ')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p>Shell escape via <code>more</code> → <code>vim</code>. Se aprovecha que vim puede cambiar su shell y ejecutar comandos del sistema.</p>
             </div>
           </div>
@@ -1396,15 +1394,15 @@ done | nc localhost 30002 | grep -v "Wrong"</code></pre>
           </div>
           <div class="level-content" id="level-26">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>Usar vim para explotar un binario setUID y obtener acceso privilegiado.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('# Dentro del shell de bandit26:\n./bandit27-do cat /etc/bandit_pass/bandit27')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('# Dentro del shell de bandit26:\n./bandit27-do cat /etc/bandit_pass/bandit27')">Copiar</button>
                 </div>
                 <pre><code># Continuando desde el nivel 25
 # Ya con shell de bandit26:
@@ -1412,13 +1410,13 @@ ls -la
 ./bandit27-do cat /etc/bandit_pass/bandit27</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">upsNCc7vzaRDx6oZC6GiR6ERwe1MowGB</span>
-                <button class="copy-btn" onclick="copyToClipboard('upsNCc7vzaRDx6oZC6GiR6ERwe1MowGB')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('upsNCc7vzaRDx6oZC6GiR6ERwe1MowGB')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p>Continuación del escape anterior. Una vez con shell completa, se puede usar el binario setUID para leer archivos privilegiados.</p>
             </div>
           </div>
@@ -1438,15 +1436,15 @@ ls -la
           </div>
           <div class="level-content" id="level-27">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>Clonar un repositorio Git y encontrar la contraseña en los archivos.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('mktemp -d\ncd /tmp/tmp.XXXXXX\ngit clone ssh://bandit27-git@localhost/home/bandit27-git/repo\ncd repo\ncat README')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('mktemp -d\ncd /tmp/tmp.XXXXXX\ngit clone ssh://bandit27-git@localhost/home/bandit27-git/repo\ncd repo\ncat README')">Copiar</button>
                 </div>
                 <pre><code>mktemp -d
 cd /tmp/tmp.XXXXXX
@@ -1455,13 +1453,13 @@ cd repo
 cat README</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">Yz9IpL0sBcCeuG7m9uQFt8ZNpS4HZRcN</span>
-                <button class="copy-btn" onclick="copyToClipboard('Yz9IpL0sBcCeuG7m9uQFt8ZNpS4HZRcN')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('Yz9IpL0sBcCeuG7m9uQFt8ZNpS4HZRcN')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p>Introducción a Git. Se clona un repositorio remoto y se examina su contenido para encontrar información sensible.</p>
             </div>
           </div>
@@ -1481,15 +1479,15 @@ cat README</code></pre>
           </div>
           <div class="level-content" id="level-28">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>Examinar el historial de commits de Git para encontrar información eliminada.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('mktemp -d\ncd /tmp/tmp.XXXXXX\ngit clone ssh://bandit28-git@localhost/home/bandit28-git/repo\ncd repo\ngit log --oneline\ngit show HEAD~1')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('mktemp -d\ncd /tmp/tmp.XXXXXX\ngit clone ssh://bandit28-git@localhost/home/bandit28-git/repo\ncd repo\ngit log --oneline\ngit show HEAD~1')">Copiar</button>
                 </div>
                 <pre><code>mktemp -d
 cd /tmp/tmp.XXXXXX
@@ -1499,13 +1497,13 @@ git log --oneline
 git show HEAD~1</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">tQKvmcwNYcFS6vmPHIUSI3ShmsrQZK8S</span>
-                <button class="copy-btn" onclick="copyToClipboard('tQKvmcwNYcFS6vmPHIUSI3ShmsrQZK8S')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('tQKvmcwNYcFS6vmPHIUSI3ShmsrQZK8S')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p>Git mantiene historial completo. Información "eliminada" en commits recientes puede estar en commits anteriores.</p>
             </div>
           </div>
@@ -1525,15 +1523,15 @@ git show HEAD~1</code></pre>
           </div>
           <div class="level-content" id="level-29">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>Explorar diferentes ramas de Git para encontrar información oculta.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('mktemp -d\ncd /tmp/tmp.XXXXXX\ngit clone ssh://bandit29-git@localhost/home/bandit29-git/repo\ncd repo\ngit branch -a\ngit checkout dev\ncat README.md')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('mktemp -d\ncd /tmp/tmp.XXXXXX\ngit clone ssh://bandit29-git@localhost/home/bandit29-git/repo\ncd repo\ngit branch -a\ngit checkout dev\ncat README.md')">Copiar</button>
                 </div>
                 <pre><code>mktemp -d
 cd /tmp/tmp.XXXXXX
@@ -1544,13 +1542,13 @@ git checkout dev
 cat README.md</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">xbhV3HpNGlTIdnjUrdAlPzc2L6y9EOnS</span>
-                <button class="copy-btn" onclick="copyToClipboard('xbhV3HpNGlTIdnjUrdAlPzc2L6y9EOnS')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('xbhV3HpNGlTIdnjUrdAlPzc2L6y9EOnS')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p>Los desarrolladores a menudo usan ramas para desarrollo. Información sensible puede estar en ramas no principales.</p>
             </div>
           </div>
@@ -1578,15 +1576,15 @@ cat README.md</code></pre>
           </div>
           <div class="level-content" id="level-30">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>Explorar tags de Git para encontrar versiones específicas con información.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('mktemp -d\ncd /tmp/tmp.XXXXXX\ngit clone ssh://bandit30-git@localhost/home/bandit30-git/repo\ncd repo\ngit tag\ngit show secret')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('mktemp -d\ncd /tmp/tmp.XXXXXX\ngit clone ssh://bandit30-git@localhost/home/bandit30-git/repo\ncd repo\ngit tag\ngit show secret')">Copiar</button>
                 </div>
                 <pre><code>mktemp -d
 cd /tmp/tmp.XXXXXX
@@ -1596,13 +1594,13 @@ git tag
 git show secret</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">OoffzGDlzhAlerFJ2cAiz1D41JW1Mhmt</span>
-                <button class="copy-btn" onclick="copyToClipboard('OoffzGDlzhAlerFJ2cAiz1D41JW1Mhmt')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('OoffzGDlzhAlerFJ2cAiz1D41JW1Mhmt')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p>Los tags en Git marcan versiones específicas. Información importante puede estar etiquetada para fácil referencia.</p>
             </div>
           </div>
@@ -1622,15 +1620,15 @@ git show secret</code></pre>
           </div>
           <div class="level-content" id="level-31">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>Crear un archivo, hacer commit y push para obtener la contraseña del servidor.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('mktemp -d\\ncd /tmp/tmp.XXXXXX\\ngit clone ssh://bandit31-git@localhost/home/bandit31-git/repo\\ncd repo\\necho &quot;May I come in?&quot; > key.txt\\ngit add -f key.txt\\ngit commit -m &quot;Add key&quot;\\ngit push origin master')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('mktemp -d\\ncd /tmp/tmp.XXXXXX\\ngit clone ssh://bandit31-git@localhost/home/bandit31-git/repo\\ncd repo\\necho &quot;May I come in?&quot; > key.txt\\ngit add -f key.txt\\ngit commit -m &quot;Add key&quot;\\ngit push origin master')"></button>
                 </div>
                 <pre><code>mktemp -d
 cd /tmp/tmp.XXXXXX
@@ -1642,13 +1640,13 @@ git commit -m "Add key"
 git push origin master</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">rmCBvG56y58BXzv98yZGdO7ATVL5dW8y</span>
-                <button class="copy-btn" onclick="copyToClipboard('rmCBvG56y58BXzv98yZGdO7ATVL5dW8y')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('rmCBvG56y58BXzv98yZGdO7ATVL5dW8y')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p>Git hooks del servidor pueden ejecutar código al recibir pushes. Se usa <code>-f</code> para forzar archivos ignorados por .gitignore.</p>
             </div>
           </div>
@@ -1668,15 +1666,15 @@ git push origin master</code></pre>
           </div>
           <div class="level-content" id="level-32">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>Escapar de una shell que convierte todo a mayúsculas usando variables especiales.</p>
             </div>
             <div class="level-solution">
-              <h5>💡 Solución</h5>
+              <h5>Solución</h5>
               <div class="code-block">
                 <div class="code-header">
                   <span>Terminal</span>
-                  <button class="copy-btn" onclick="copyToClipboard('$0\ncat /etc/bandit_pass/bandit33')">📋</button>
+                  <button class="copy-btn" onclick="copyToClipboard('$0\ncat /etc/bandit_pass/bandit33')">Copiar</button>
                 </div>
                 <pre><code># En la UPPERCASE shell:
 $0
@@ -1684,13 +1682,13 @@ $0
 cat /etc/bandit_pass/bandit33</code></pre>
               </div>
               <div class="credential-box">
-                <span class="credential-label">🔑 Contraseña:</span>
+                <span class="credential-label">Contraseña:</span>
                 <span class="credential-value">odHo63fHiFqcWWJG9rLiLDtPm45KzUKy</span>
-                <button class="copy-btn" onclick="copyToClipboard('odHo63fHiFqcWWJG9rLiLDtPm45KzUKy')">📋</button>
+                <button class="copy-btn" onclick="copyToClipboard('odHo63fHiFqcWWJG9rLiLDtPm45KzUKy')">Copiar</button>
               </div>
             </div>
             <div class="level-explanation">
-              <h5>📚 Explicación</h5>
+              <h5>Explicación</h5>
               <p><code>$0</code> es una variable especial que contiene el nombre del shell actual, permitiendo escape de shells restringidas.</p>
             </div>
           </div>
@@ -1710,7 +1708,7 @@ cat /etc/bandit_pass/bandit33</code></pre>
           </div>
           <div class="level-content" id="level-33">
             <div class="level-objective">
-              <h5>🎯 Objetivo</h5>
+              <h5>Objetivo</h5>
               <p>¡Has completado todos los niveles de Bandit! Este es el nivel final de reconocimiento.</p>
             </div>
             <div class="level-solution">
@@ -1720,18 +1718,18 @@ cat /etc/bandit_pass/bandit33</code></pre>
                   <h4>🏆 ¡Has Masterizado Bandit!</h4>
                   <p>Has demostrado dominio en:</p>
                   <ul>
-                    <li>✅ Fundamentos de Linux y SSH</li>
-                    <li>✅ Manipulación de archivos y permisos</li>
-                    <li>✅ Técnicas de búsqueda y filtrado</li>
-                    <li>✅ Codificación y cifrado</li>
-                    <li>✅ Compresión y descompresión</li>
-                    <li>✅ Networking y protocolos seguros</li>
-                    <li>✅ Binarios setUID y escalada de privilegios</li>
-                    <li>✅ Programación y scripting</li>
-                    <li>✅ Trabajos cron y automatización</li>
-                    <li>✅ Ataques de fuerza bruta</li>
-                    <li>✅ Git y control de versiones</li>
-                    <li>✅ Shell escapes y bypasses</li>
+                    <li>Fundamentos de Linux y SSH</li>
+                    <li>Manipulación de archivos y permisos</li>
+                    <li>Técnicas de búsqueda y filtrado</li>
+                    <li>Codificación y cifrado</li>
+                    <li>Compresión y descompresión</li>
+                    <li>Networking y protocolos seguros</li>
+                    <li>Binarios setUID y escalada de privilegios</li>
+                    <li>Programación y scripting</li>
+                    <li>Trabajos cron y automatización</li>
+                    <li>Ataques de fuerza bruta</li>
+                    <li>Git y control de versiones</li>
+                    <li>Shell escapes y bypasses</li>
                   </ul>
                 </div>
               </div>
@@ -1744,7 +1742,7 @@ cat /etc/bandit_pass/bandit33</code></pre>
     <section class="completion-section">
       <div class="mission-header">
         <div class="hacker-badge animate-fade-in">
-          <span>⚡</span>
+          <span></span>
           <span>MISIÓN COMPLETADA</span>
         </div>
         <div class="mission-title-container">
@@ -1758,7 +1756,7 @@ cat /etc/bandit_pass/bandit33</code></pre>
         <!-- Sección de Aventuras Continuas -->
         <div class="adventure-section animate-delay-3">
           <h3 class="section-title-epic">
-            <span>🚀</span>
+            <span></span>
             RECURSOS
           </h3>
           
@@ -1805,7 +1803,7 @@ cat /etc/bandit_pass/bandit33</code></pre>
         <div class="reflection-section animate-delay-4">
           <div class="reflection-content">
             <h3 class="section-title-epic">
-              <span>🎓</span>
+              <span></span>
               Reflexiones
             </h3>
             
@@ -1823,13 +1821,13 @@ cat /etc/bandit_pass/bandit33</code></pre>
                   <span class="skill-icon">🐧</span>
                   <div class="skill-name">Linux</div>
                   <div class="skill-level">Master</div>
-                  <span class="skill-icon">🔍</span>
+                  <span class="skill-icon"></span>
                   <div class="skill-name">Digital Detective</div>
                   <div class="skill-level">Expert</div>
-                  <span class="skill-icon">🛡️</span>
+                  <span class="skill-icon"></span>
                   <div class="skill-name">Security</div>
                   <div class="skill-level">Advanced</div>
-                  <span class="skill-icon">⚡</span>
+                  <span class="skill-icon"></span>
                   <div class="skill-name">Script</div>
                   <div class="skill-level">Pro</div>
                   <span class="skill-icon">🌐</span>
@@ -1847,7 +1845,7 @@ cat /etc/bandit_pass/bandit33</code></pre>
 
       <!-- Call to Action Final Épico -->
       <div class="final-cta">
-        <h3>🚀 ¿Te ha gustado este proyecto?</h3>
+        <h3>¿Te ha gustado este proyecto?</h3>
         <p>Conecta conmigo y explora más proyectos de ciberseguridad</p>
         <div class="cta-buttons">
               <a href="../proyectos.html" class="cta-btn primary">Ver Más Proyectos</a>
