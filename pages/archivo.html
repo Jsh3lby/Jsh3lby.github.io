@@ -163,14 +163,6 @@
           </p>
         </div>
         
-        <div class="tag-cloud" role="group" aria-label="Filtrar hitos por categorías">
-          <span class="tag active" data-filter="all">Todos</span>
-          <span class="tag" data-filter="proyectos">Proyectos</span>
-          <span class="tag" data-filter="certificaciones">Certificaciones</span>
-          <span class="tag" data-filter="ciberseguridad">Seguridad</span>
-          <span class="tag" data-filter="sistemas">Sistemas</span>
-        </div>
-
         <div class="timeline">
           <div class="timeline-item" data-year="2025">
             <h3>2025</h3>
@@ -420,52 +412,5 @@
   <script src="../assets/scripts/theme-switcher.js" defer></script>
   <script src="../assets/scripts/scroll-effects.js" defer></script>
   <script src="archivo-effects.js" defer></script>
-  <script>
-    // Filtro de hitos por etiquetas mejorado
-    document.addEventListener('DOMContentLoaded', function() {
-      const tags = document.querySelectorAll('.tag');
-      const entries = document.querySelectorAll('.timeline-entry');
-
-      tags.forEach(tag => {
-        tag.addEventListener('click', function() {
-          const filter = this.getAttribute('data-filter').toLowerCase();
-          
-          // Actualizar tags activos con animación
-          tags.forEach(t => t.classList.remove('active'));
-          this.classList.add('active');
-          
-          // Animar filtrado
-          entries.forEach((entry, index) => {
-            const entryTags = entry.getAttribute('data-tags').toLowerCase();
-            const shouldShow = filter === 'all' || entryTags.includes(filter);
-            
-            if (shouldShow) {
-              setTimeout(() => {
-                entry.style.display = '';
-                entry.classList.add('filter-show');
-                entry.classList.remove('filter-hide');
-              }, index * 50);
-            } else {
-              entry.classList.add('filter-hide');
-              entry.classList.remove('filter-show');
-              setTimeout(() => {
-                entry.style.display = 'none';
-              }, 200);
-            }
-          });
-        });
-      });
-
-      // Prefiltrar según parámetro URL
-      const urlParams = new URLSearchParams(window.location.search);
-      const tag = urlParams.get('tag')?.toLowerCase();
-      if (tag) {
-        const activeTag = document.querySelector(`.tag[data-filter="${tag}"]`);
-        if (activeTag) {
-          activeTag.click();
-        }
-      }
-    });
-  </script>
 </body>
 </html>
