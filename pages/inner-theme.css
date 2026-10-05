@@ -815,6 +815,29 @@ body.projects-page h4 {
   overflow-wrap: anywhere;
 }
 
+body.projects-page .content-section > .section-header {
+  align-items: initial;
+  display: block;
+  margin: 0 auto 2.5rem;
+  max-width: 800px;
+  padding: 0 1.25rem;
+  text-align: center;
+}
+
+body.projects-page .content-section > .section-header .section-title {
+  display: block;
+  font-size: clamp(2rem, 5vw, 3rem) !important;
+  line-height: 1.1;
+  margin: 0 0 1rem !important;
+  text-align: center;
+}
+
+body.projects-page .content-section > .section-header .section-subtitle {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
 footer {
   background: var(--inner-ink) !important;
   border: 0 !important;
