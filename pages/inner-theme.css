@@ -825,6 +825,8 @@ html[data-theme="dark"] .archivo-page .timeline-date {
   background: transparent !important;
   border-top: 1px solid var(--inner-line);
   margin-bottom: 0;
+  opacity: 1;
+  animation: none;
   padding: 2.5rem 0 0;
 }
 
