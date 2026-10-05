@@ -595,6 +595,8 @@
   .hero-stats {
     gap: 2rem;
   }
+
+  /* La composición visual común se completa en inner-theme.css. */
   
   .stat-number {
     font-size: 2rem;

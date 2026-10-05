@@ -615,6 +615,81 @@ footer {
   .nav-links {
     display: none;
   }
+
+  /* Perfil editorial: la trayectoria funciona como un registro técnico. */
+  .sobre-mi-page .archive-section {
+    padding-top: 5rem;
+  }
+
+  .sobre-mi-page .section-header {
+    border-bottom: 1px solid var(--inner-line);
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    text-align: left;
+  }
+
+  .sobre-mi-page .tag-cloud {
+    justify-content: flex-start;
+    margin-bottom: 2.5rem;
+  }
+
+  .sobre-mi-page .timeline {
+    max-width: var(--inner-max);
+    padding: 0;
+  }
+
+  .sobre-mi-page .timeline-item {
+    border-top: 1px solid var(--inner-line);
+    margin-bottom: 0;
+    padding: 2rem 0;
+  }
+
+  .sobre-mi-page .timeline-item h3 {
+    border: 0;
+    color: var(--inner-muted);
+    display: block;
+    font-family: monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    margin: 0 0 1rem;
+    padding: 0;
+    text-transform: uppercase;
+  }
+
+  .sobre-mi-page .timeline-entry {
+    border-bottom: 1px solid var(--inner-line);
+    margin-bottom: 0;
+    padding: 1.25rem 0;
+  }
+
+  .sobre-mi-page .timeline-date {
+    color: var(--inner-muted);
+    font-family: monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .sobre-mi-page .timeline-content {
+    padding: 1.25rem 1.5rem !important;
+  }
+
+  .sobre-mi-page .timeline-content h4 {
+    font-size: 1.15rem;
+    letter-spacing: -0.02em;
+  }
+
+  .sobre-mi-page .tech-tags {
+    gap: 0.4rem;
+  }
+
+  .sobre-mi-page .tech-tags span {
+    border: 1px solid var(--inner-line);
+    color: var(--inner-muted);
+    font-family: monospace;
+    font-size: 0.65rem;
+    padding: 0.35rem 0.5rem;
+  }
   
   .hamburger {
     display: flex;
