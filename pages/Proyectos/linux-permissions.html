@@ -18,7 +18,7 @@
   <link rel="icon" href="../../favicon.ico" type="image/x-icon" id="favicon">
   <link rel="alternate icon" href="../../assets/images/logo-light.png" type="image/png">
 </head>
-<body class="projects-page">
+<body class="projects-page linux-permissions-page">
   <!-- Navegación principal -->
   <nav>
     <div class="nav-brand">
@@ -80,19 +80,19 @@
     <section class="hero-section">
       <div class="hero-container animate-fade-in">
         <div class="hero-badge animate-delay-1">
-          <span>🔒</span>
+
           <span>Linux Security</span>
         </div>
-        
+
         <h1 class="hero-title animate-delay-2">
           Gestión de Permisos Linux
         </h1>
-        
+
         <p class="hero-subtitle animate-delay-3">
           Scripts avanzados para automatizar la auditoría y gestión de permisos de archivos en sistemas Linux.
           Herramientas profesionales para asegurar la integridad y seguridad del sistema.
         </p>
-        
+
         <div class="hero-stats animate-delay-3">
           <div class="stat-item">
             <span class="stat-number">5</span>
@@ -107,14 +107,14 @@
             <span class="stat-label">Bash</span>
           </div>
         </div>
-        
+
         <div class="hero-actions animate-delay-4">
           <a href="#overview" class="hero-cta primary">
             <span>Ver Proyecto</span>
             <span>→</span>
           </a>
           <a href="https://github.com/jsh3lby/File_permissions_in_Linux" target="_blank" rel="noopener noreferrer" class="hero-cta secondary">
-            <span>📁 GitHub</span>
+            <span>GitHub</span>
           </a>
         </div>
       </div>
@@ -126,17 +126,14 @@
         <h2 class="section-title">¿Qué es la Gestión de Permisos Linux?</h2>
         <div class="overview-grid">
           <div class="overview-card animate-on-scroll">
-            <div class="card-icon">🎯</div>
             <h3>Objetivo</h3>
             <p>Automatizar la auditoría y gestión de permisos para garantizar la seguridad y conformidad en sistemas Linux.</p>
           </div>
           <div class="overview-card animate-on-scroll">
-            <div class="card-icon">⚡</div>
             <h3>Tecnología</h3>
             <p>Desarrollado con scripts Bash nativos usando comandos como ls, chmod, chown y find para máxima compatibilidad.</p>
           </div>
           <div class="overview-card animate-on-scroll">
-            <div class="card-icon">🛡️</div>
             <h3>Seguridad</h3>
             <p>Implementa mejores prácticas de seguridad para proteger archivos sensibles y cumplir con políticas corporativas.</p>
           </div>
@@ -151,28 +148,26 @@
         <div class="features-grid">
           <div class="feature-card glass animate-on-scroll">
             <div class="feature-header">
-              <div class="feature-icon">📊</div>
               <h3>Auditoría Automática</h3>
             </div>
             <p>Escaneo completo del sistema para identificar archivos y directorios con permisos incorrectos o vulnerables.</p>
             <ul class="feature-list">
-              <li>✅ Detección de permisos excesivos</li>
-              <li>✅ Archivos con permisos 777</li>
-              <li>✅ Configuraciones SUID/SGID</li>
-              <li>✅ Reportes detallados</li>
+              <li>Detección de permisos excesivos</li>
+              <li>Archivos con permisos 777</li>
+              <li>Configuraciones SUID/SGID</li>
+              <li>Reportes detallados</li>
             </ul>
           </div>
           <div class="feature-card glass animate-on-scroll">
             <div class="feature-header">
-              <div class="feature-icon">🔧</div>
               <h3>Corrección Automática</h3>
             </div>
             <p>Scripts para aplicar automáticamente las correcciones de permisos según políticas predefinidas.</p>
             <ul class="feature-list">
-              <li>✅ Aplicación masiva de permisos</li>
-              <li>✅ Respaldo antes de cambios</li>
-              <li>✅ Verificación post-corrección</li>
-              <li>✅ Logs de todas las acciones</li>
+              <li>Aplicación masiva de permisos</li>
+              <li>Respaldo antes de cambios</li>
+              <li>Verificación post-corrección</li>
+              <li>Logs de todas las acciones</li>
             </ul>
           </div>
         </div>
@@ -312,7 +307,7 @@ diff backups/permissions_backup_*.txt current_permissions.txt</code></pre>
           <button class="tab-btn" data-tab="fix">fix-permissions.sh</button>
           <button class="tab-btn" data-tab="functions">Funciones Core</button>
         </div>
-        
+
         <div class="code-content" id="audit-code">
           <div class="code-header">
             <span class="code-title">audit_permissions.sh</span>
@@ -362,12 +357,12 @@ log_message "Iniciando auditoría de permisos en: $AUDIT_DIR"
     echo ""
 
     # Archivos SUID/SGID
-    echo "🔐 ARCHIVOS CON SUID/SGID:"
+    echo "ARCHIVOS CON SUID/SGID:"
     find "$AUDIT_DIR" -type f \( -perm -4000 -o -perm -2000 \) -ls 2>/dev/null
     echo ""
 
     # Directorios con permisos excesivos
-    echo "📁 DIRECTORIOS CON PERMISOS EXCESIVOS:"
+    echo "DIRECTORIOS CON PERMISOS EXCESIVOS:"
     find "$AUDIT_DIR" -type d -perm -002 -ls 2>/dev/null | head -20
     echo ""
 
@@ -377,19 +372,19 @@ log_message "Iniciando auditoría de permisos en: $AUDIT_DIR"
     echo ""
 
     # Resumen estadístico
-    echo "📊 RESUMEN ESTADÍSTICO:"
+    echo "RESUMEN ESTADÍSTICO:"
     total_files=$(find "$AUDIT_DIR" -type f 2>/dev/null | wc -l)
     critical_files=$(find "$AUDIT_DIR" -type f -perm 777 2>/dev/null | wc -l)
     world_writable=$(find "$AUDIT_DIR" -type f -perm -002 2>/dev/null | wc -l)
-    
+
     echo "- Total de archivos analizados: $total_files"
     echo "- Archivos críticos (777): $critical_files"
     echo "- Archivos con escritura mundial: $world_writable"
-    
+
 } > "$REPORT_FILE"
 
 log_message "Auditoría completada. Reporte guardado en: $REPORT_FILE"
-echo "📋 Reporte de auditoría: $REPORT_FILE"
+echo "Reporte de auditoría: $REPORT_FILE"
 echo "📝 Log de ejecución: $LOG_FILE"</code></pre>
         </div>
 
@@ -498,11 +493,11 @@ log_action "Respaldos guardados en: $BACKUP_DIR"
 log_action "Log completo: $LOG_FILE"
 
 if [[ "$DRY_RUN" == "true" ]]; then
-    echo "🔍 Ejecución en modo DRY-RUN - No se realizaron cambios reales"
-    echo "📋 Para aplicar cambios, ejecuta: $0 $TARGET_DIR false"
+    echo "Ejecución en modo DRY-RUN - No se realizaron cambios reales"
+    echo "Para aplicar cambios, ejecuta: $0 $TARGET_DIR false"
 fi
 
-echo "✅ Corrección de permisos completada"
+echo "Corrección de permisos completada"
 echo "📝 Ver log completo: cat $LOG_FILE"</code></pre>
         </div>
 
@@ -520,26 +515,26 @@ echo "📝 Ver log completo: cat $LOG_FILE"</code></pre>
 # Función para verificar permisos detallados de un archivo
 check_file_permissions() {
     local file="$1"
-    
+
     if [[ ! -e "$file" ]]; then
         echo "❌ ERROR: El archivo '$file' no existe"
         return 1
     fi
-    
+
     local perms_octal=$(stat -c "%a" "$file" 2>/dev/null)
     local perms_symbolic=$(stat -c "%A" "$file" 2>/dev/null)
     local owner=$(stat -c "%U" "$file" 2>/dev/null)
     local group=$(stat -c "%G" "$file" 2>/dev/null)
     local size=$(stat -c "%s" "$file" 2>/dev/null)
     local modified=$(stat -c "%y" "$file" 2>/dev/null)
-    
+
     echo "📄 INFORMACIÓN DEL ARCHIVO: $file"
     echo "   Permisos octales: $perms_octal"
     echo "   Permisos simbólicos: $perms_symbolic"
     echo "   Propietario: $owner:$group"
     echo "   Tamaño: $size bytes"
     echo "   Última modificación: $modified"
-    
+
     # Análisis de seguridad
     analyze_security_risk "$file" "$perms_octal"
 }
@@ -548,19 +543,19 @@ check_file_permissions() {
 analyze_security_risk() {
     local file="$1"
     local perms="$2"
-    
-    echo "🔍 ANÁLISIS DE SEGURIDAD:"
-    
+
+    echo "ANÁLISIS DE SEGURIDAD:"
+
     # Verificar permisos críticos
     case "$perms" in
         777) echo "   🚨 CRÍTICO: Permisos 777 - Lectura, escritura y ejecución para todos" ;;
         666) echo "   ⚠️  ALTO: Permisos 666 - Lectura y escritura para todos" ;;
-        755) echo "   ✅ SEGURO: Permisos 755 - Configuración estándar" ;;
-        644) echo "   ✅ SEGURO: Permisos 644 - Solo lectura para grupo y otros" ;;
-        600) echo "   🔒 SEGURO: Permisos 600 - Solo propietario puede acceder" ;;
+        755) echo "   SEGURO: Permisos 755 - Configuración estándar" ;;
+        644) echo "   SEGURO: Permisos 644 - Solo lectura para grupo y otros" ;;
+        600) echo "   SEGURO: Permisos 600 - Solo propietario puede acceder" ;;
         *) echo "   ℹ️  INFO: Permisos $perms - Verificar manualmente" ;;
     esac
-    
+
     # Verificar si es ejecutable por otros
     if [[ $(echo "$perms" | cut -c3) -eq 1 ]] || [[ $(echo "$perms" | cut -c3) -eq 3 ]] || [[ $(echo "$perms" | cut -c3) -eq 5 ]] || [[ $(echo "$perms" | cut -c3) -eq 7 ]]; then
         echo "   ⚠️  ADVERTENCIA: Archivo ejecutable por otros usuarios"
@@ -571,9 +566,9 @@ analyze_security_risk() {
 generate_security_report() {
     local target_dir="$1"
     local report_file="${2:-security_report_$(date +%Y%m%d_%H%M%S).html}"
-    
-    echo "🔍 Generando reporte de seguridad detallado..."
-    
+
+    echo "Generando reporte de seguridad detallado..."
+
     cat > "$report_file" << EOF
 <!DOCTYPE html>
 <html>
@@ -590,12 +585,12 @@ generate_security_report() {
     </style>
 </head>
 <body>
-    <h1>🔒 Reporte de Seguridad de Permisos</h1>
+    <h1>Reporte de Seguridad de Permisos</h1>
     <p><strong>Directorio analizado:</strong> $target_dir</p>
     <p><strong>Fecha de generación:</strong> $(date)</p>
     <p><strong>Usuario:</strong> $(whoami)</p>
-    
-    <h2>📊 Resumen Ejecutivo</h2>
+
+    <h2>Resumen Ejecutivo</h2>
     <table>
         <tr><th>Categoría</th><th>Cantidad</th><th>Estado</th></tr>
 EOF
@@ -605,24 +600,24 @@ EOF
     local critical_files=$(find "$target_dir" -type f -perm 777 2>/dev/null | wc -l)
     local world_writable=$(find "$target_dir" -type f -perm -002 2>/dev/null | wc -l)
     local executable_others=$(find "$target_dir" -type f -perm -001 2>/dev/null | wc -l)
-    
+
     cat >> "$report_file" << EOF
         <tr><td>Total de archivos</td><td>$total_files</td><td class="safe">✅</td></tr>
         <tr><td>Archivos críticos (777)</td><td>$critical_files</td><td class="$([ $critical_files -eq 0 ] && echo 'safe' || echo 'critical')">$([ $critical_files -eq 0 ] && echo '✅' || echo '🚨')</td></tr>
         <tr><td>Archivos con escritura mundial</td><td>$world_writable</td><td class="$([ $world_writable -eq 0 ] && echo 'safe' || echo 'warning')">$([ $world_writable -eq 0 ] && echo '✅' || echo '⚠️')</td></tr>
         <tr><td>Ejecutables por otros</td><td>$executable_others</td><td class="$([ $executable_others -eq 0 ] && echo 'safe' || echo 'warning')">$([ $executable_others -eq 0 ] && echo '✅' || echo '⚠️')</td></tr>
     </table>
-    
+
     <h2>🚨 Archivos Críticos</h2>
     <pre>
 EOF
 
     find "$target_dir" -type f -perm 777 -ls 2>/dev/null >> "$report_file"
-    
+
     cat >> "$report_file" << EOF
     </pre>
-    
-    <h2>📋 Recomendaciones</h2>
+
+    <h2>Recomendaciones</h2>
     <ul>
         <li>Corregir inmediatamente archivos con permisos 777</li>
         <li>Revisar archivos con escritura mundial</li>
@@ -634,34 +629,34 @@ EOF
 </html>
 EOF
 
-    echo "✅ Reporte HTML generado: $report_file"
+    echo "Reporte HTML generado: $report_file"
 }
 
 # Función para aplicar políticas de seguridad por tipo
 apply_file_type_policies() {
     local target_dir="$1"
-    
-    echo "🛡️ Aplicando políticas de seguridad por tipo de archivo..."
-    
+
+    echo "Aplicando políticas de seguridad por tipo de archivo..."
+
     # Scripts de shell
     find "$target_dir" -name "*.sh" -type f -exec chmod 755 {} \;
-    echo "   ✅ Scripts .sh configurados a 755"
-    
+    echo "   Scripts .sh configurados a 755"
+
     # Archivos de configuración
     find "$target_dir" -name "*.conf" -o -name "*.cfg" -o -name "*.ini" | while read -r file; do
         chmod 644 "$file"
     done
-    echo "   ✅ Archivos de configuración configurados a 644"
-    
+    echo "   Archivos de configuración configurados a 644"
+
     # Archivos de log
     find "$target_dir" -name "*.log" -type f -exec chmod 640 {} \;
-    echo "   ✅ Archivos de log configurados a 640"
-    
+    echo "   Archivos de log configurados a 640"
+
     # Archivos de datos sensibles
     find "$target_dir" -name "*password*" -o -name "*secret*" -o -name "*key*" | while read -r file; do
         if [[ -f "$file" ]]; then
             chmod 600 "$file"
-            echo "   🔒 Archivo sensible protegido: $file"
+            echo "   Archivo sensible protegido: $file"
         fi
     done
 }
@@ -669,25 +664,25 @@ apply_file_type_policies() {
 # Función principal de validación
 validate_permissions() {
     local target="$1"
-    
+
     if [[ ! -e "$target" ]]; then
         echo "❌ ERROR: '$target' no existe"
         return 1
     fi
-    
+
     if [[ -f "$target" ]]; then
         check_file_permissions "$target"
     elif [[ -d "$target" ]]; then
-        echo "📁 Analizando directorio: $target"
+        echo "Analizando directorio: $target"
         local file_count=$(find "$target" -type f | wc -l)
         echo "   Archivos encontrados: $file_count"
-        
+
         # Análisis rápido de problemas
         local issues=$(find "$target" -type f \( -perm 777 -o -perm -002 \) | wc -l)
         if [[ $issues -gt 0 ]]; then
             echo "   ⚠️  Problemas detectados: $issues archivos requieren atención"
         else
-            echo "   ✅ No se detectaron problemas críticos"
+            echo "   No se detectaron problemas críticos"
         fi
     fi
 }</code></pre>
@@ -700,9 +695,8 @@ validate_permissions() {
       <div class="container">
         <div class="security-content">
           <h2 class="section-title">Consideraciones de Seguridad</h2>
-          
+
           <div class="security-warning">
-            <div class="warning-icon">⚠️</div>
             <div class="warning-content">
               <h3>Uso Responsable</h3>
               <p>Esta herramienta debe utilizarse únicamente en sistemas propios o con autorización explícita del administrador. Siempre crea respaldos antes de aplicar cambios masivos de permisos.</p>
@@ -785,7 +779,7 @@ validate_permissions() {
     <section class="final-cta-section">
       <div class="container">
         <div class="final-cta">
-          <h3>🚀 ¿Te ha gustado este proyecto?</h3>
+          <h3>¿Te ha gustado este proyecto?</h3>
           <p>Conecta conmigo y explora más proyectos de ciberseguridad</p>
           <div class="cta-buttons">
             <a href="../proyectos.html" class="cta-btn primary">Ver Más Proyectos</a>

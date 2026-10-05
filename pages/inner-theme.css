@@ -878,6 +878,250 @@ body.projects-page .content-section > .section-header .section-subtitle {
   text-align: right;
 }
 
+body.port-scanner-page main > section,
+body.sql-filters-page main > section,
+body.linux-permissions-page main > section {
+  background: transparent !important;
+  border-bottom: 1px solid var(--inner-line) !important;
+  box-shadow: none !important;
+}
+
+body.port-scanner-page .hero-section,
+body.sql-filters-page .hero-section,
+body.linux-permissions-page .hero-section {
+  min-height: 680px;
+  padding: 8rem 1.25rem 6rem;
+}
+
+body.port-scanner-page .hero-section::before,
+body.sql-filters-page .hero-section::before,
+body.linux-permissions-page .hero-section::before {
+  background: var(--inner-accent);
+  box-shadow: none;
+  opacity: 0.8;
+}
+
+body.port-scanner-page .hero-container,
+body.sql-filters-page .hero-container,
+body.linux-permissions-page .hero-container {
+  max-width: 920px;
+}
+
+body.port-scanner-page .hero-badge,
+body.sql-filters-page .hero-badge,
+body.linux-permissions-page .hero-badge {
+  background: transparent !important;
+  border: 1px solid var(--inner-line) !important;
+  border-radius: 0 !important;
+  color: var(--inner-accent-dark) !important;
+  box-shadow: none !important;
+}
+
+html[data-theme="dark"] body.port-scanner-page .hero-badge,
+html[data-theme="dark"] body.sql-filters-page .hero-badge,
+html[data-theme="dark"] body.linux-permissions-page .hero-badge {
+  color: var(--inner-accent) !important;
+}
+
+body.port-scanner-page .hero-title,
+body.sql-filters-page .hero-title,
+body.linux-permissions-page .hero-title {
+  color: var(--inner-ink) !important;
+  font-size: clamp(2.8rem, 7vw, 6.5rem) !important;
+  letter-spacing: -0.08em;
+  line-height: 0.98;
+  text-shadow: none !important;
+}
+
+body.port-scanner-page .hero-subtitle,
+body.sql-filters-page .hero-subtitle,
+body.linux-permissions-page .hero-subtitle {
+  color: var(--inner-muted) !important;
+  max-width: 720px;
+}
+
+body.port-scanner-page .hero-stats,
+body.sql-filters-page .hero-stats,
+body.linux-permissions-page .hero-stats {
+  border-block: 1px solid var(--inner-line);
+  gap: 0;
+  justify-content: center;
+  margin: 2rem auto;
+  max-width: 680px;
+  padding: 1rem 0;
+}
+
+body.port-scanner-page .stat-item,
+body.sql-filters-page .stat-item,
+body.linux-permissions-page .stat-item {
+  border-left: 1px solid var(--inner-line);
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0.5rem 1.5rem;
+}
+
+body.port-scanner-page .stat-item:first-child,
+body.sql-filters-page .stat-item:first-child,
+body.linux-permissions-page .stat-item:first-child {
+  border-left: 0;
+}
+
+body.port-scanner-page .stat-number,
+body.sql-filters-page .stat-number,
+body.linux-permissions-page .stat-number {
+  color: var(--inner-accent) !important;
+}
+
+body.port-scanner-page .stat-label,
+body.sql-filters-page .stat-label,
+body.linux-permissions-page .stat-label {
+  color: var(--inner-muted) !important;
+}
+
+body.port-scanner-page .overview-section,
+body.port-scanner-page .features-section,
+body.port-scanner-page .demo-section,
+body.port-scanner-page .results-section,
+body.port-scanner-page .usage-section,
+body.port-scanner-page .security-section,
+body.port-scanner-page .technical-section,
+body.port-scanner-page .code-section,
+body.port-scanner-page .final-cta-section,
+body.sql-filters-page .section-container,
+body.sql-filters-page .final-cta,
+body.linux-permissions-page .overview-section,
+body.linux-permissions-page .features-section,
+body.linux-permissions-page .demo-section,
+body.linux-permissions-page .usage-section,
+body.linux-permissions-page .security-section,
+body.linux-permissions-page .technical-section,
+body.linux-permissions-page .code-section,
+body.linux-permissions-page .final-cta-section {
+  padding: 4.5rem max(1.25rem, calc((100vw - var(--inner-max)) / 2));
+}
+
+body.port-scanner-page .container,
+body.sql-filters-page .container,
+body.sql-filters-page .content-wrapper,
+body.linux-permissions-page .container {
+  max-width: var(--inner-max);
+  margin-inline: auto;
+}
+
+body.port-scanner-page .section-title,
+body.sql-filters-page .section-title,
+body.linux-permissions-page .section-title {
+  color: var(--inner-ink) !important;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  letter-spacing: -0.06em;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+body.port-scanner-page .overview-card,
+body.port-scanner-page .feature-card,
+body.port-scanner-page .result-card,
+body.port-scanner-page .stat-card,
+body.port-scanner-page .usage-card,
+body.port-scanner-page .security-card,
+body.port-scanner-page .technical-card,
+body.sql-filters-page .overview-card,
+body.sql-filters-page .feature-card,
+body.sql-filters-page .test-case,
+body.sql-filters-page .conclusion-card,
+body.linux-permissions-page .overview-card,
+body.linux-permissions-page .feature-card,
+body.linux-permissions-page .usage-card,
+body.linux-permissions-page .security-card,
+body.linux-permissions-page .technical-card {
+  background: transparent !important;
+  border: 0 !important;
+  border-top: 1px solid var(--inner-line) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 1.5rem 0;
+  transform: none !important;
+}
+
+body.port-scanner-page .overview-grid,
+body.port-scanner-page .features-grid,
+body.port-scanner-page .results-grid,
+body.port-scanner-page .usage-grid,
+body.port-scanner-page .security-grid,
+body.port-scanner-page .technical-grid,
+body.sql-filters-page .overview-grid,
+body.sql-filters-page .features-grid,
+body.sql-filters-page .test-cases-grid,
+body.linux-permissions-page .overview-grid,
+body.linux-permissions-page .features-grid,
+body.linux-permissions-page .usage-grid,
+body.linux-permissions-page .security-grid,
+body.linux-permissions-page .technical-grid {
+  gap: 0 2.5rem;
+}
+
+body.port-scanner-page .card-icon,
+body.port-scanner-page .feature-icon,
+body.sql-filters-page .card-icon,
+body.sql-filters-page .feature-icon,
+body.linux-permissions-page .card-icon,
+body.linux-permissions-page .feature-icon {
+  color: var(--inner-accent) !important;
+  filter: none !important;
+}
+
+body.port-scanner-page h3,
+body.sql-filters-page h3,
+body.linux-permissions-page h3,
+body.port-scanner-page h4,
+body.sql-filters-page h4,
+body.linux-permissions-page h4,
+body.port-scanner-page h5,
+body.sql-filters-page h5,
+body.linux-permissions-page h5 {
+  color: var(--inner-ink) !important;
+}
+
+body.port-scanner-page p,
+body.sql-filters-page p,
+body.linux-permissions-page p,
+body.port-scanner-page li,
+body.sql-filters-page li,
+body.linux-permissions-page li {
+  color: var(--inner-muted);
+  line-height: 1.7;
+}
+
+body.port-scanner-page pre,
+body.sql-filters-page pre,
+body.linux-permissions-page pre,
+body.port-scanner-page .code-block,
+body.sql-filters-page .code-block,
+body.linux-permissions-page .code-block,
+body.port-scanner-page .terminal-window,
+body.sql-filters-page .terminal-window,
+body.linux-permissions-page .terminal-window {
+  background: var(--inner-surface) !important;
+  border: 1px solid var(--inner-line) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  color: var(--inner-ink) !important;
+  overflow-x: auto;
+}
+
+body.port-scanner-page .ethical-disclaimer {
+  background: transparent !important;
+  border: 1px solid var(--inner-line) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+body.port-scanner-page .final-cta-section,
+body.sql-filters-page .final-cta,
+body.linux-permissions-page .final-cta-section {
+  text-align: left;
+}
+
 footer {
   background: var(--inner-ink) !important;
   border: 0 !important;
@@ -1572,6 +1816,69 @@ html[data-theme="dark"] .archivo-page .timeline-date {
 
   body.projects-page .hero-container {
     padding-top: 3.25rem !important;
+  }
+
+  body.port-scanner-page .hero-section,
+  body.sql-filters-page .hero-section,
+  body.linux-permissions-page .hero-section {
+    min-height: auto;
+    padding: 6rem 1.25rem 4rem;
+  }
+
+  body.port-scanner-page .hero-title,
+  body.sql-filters-page .hero-title,
+  body.linux-permissions-page .hero-title {
+    font-size: clamp(2.5rem, 13vw, 4rem) !important;
+  }
+
+  body.port-scanner-page .hero-stats,
+  body.sql-filters-page .hero-stats,
+  body.linux-permissions-page .hero-stats {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  body.port-scanner-page .stat-item,
+  body.sql-filters-page .stat-item,
+  body.linux-permissions-page .stat-item {
+    border-left: 0;
+    border-top: 1px solid var(--inner-line);
+    padding: 0.85rem 0;
+  }
+
+  body.port-scanner-page .stat-item:first-child,
+  body.sql-filters-page .stat-item:first-child,
+  body.linux-permissions-page .stat-item:first-child {
+    border-top: 0;
+  }
+
+  body.port-scanner-page .overview-section,
+  body.port-scanner-page .features-section,
+  body.port-scanner-page .demo-section,
+  body.port-scanner-page .results-section,
+  body.port-scanner-page .usage-section,
+  body.port-scanner-page .security-section,
+  body.port-scanner-page .technical-section,
+  body.port-scanner-page .code-section,
+  body.port-scanner-page .final-cta-section,
+  body.sql-filters-page .section-container,
+  body.sql-filters-page .final-cta,
+  body.linux-permissions-page .overview-section,
+  body.linux-permissions-page .features-section,
+  body.linux-permissions-page .demo-section,
+  body.linux-permissions-page .usage-section,
+  body.linux-permissions-page .security-section,
+  body.linux-permissions-page .technical-section,
+  body.linux-permissions-page .code-section,
+  body.linux-permissions-page .final-cta-section {
+    padding: 3.5rem 1.25rem;
+  }
+
+  body.port-scanner-page .section-title,
+  body.sql-filters-page .section-title,
+  body.linux-permissions-page .section-title {
+    font-size: clamp(1.8rem, 9vw, 2.5rem);
   }
 
   body.projects-page .hero-title {
