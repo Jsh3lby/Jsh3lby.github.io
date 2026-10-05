@@ -26,6 +26,43 @@ body {
   color: var(--inner-ink) !important;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+}
+
+pre,
+code,
+table {
+  max-width: 100%;
+}
+
+pre,
+.code-block,
+.terminal-window,
+.result-table {
+  overflow-x: auto;
+}
+
 body {
   font-family: 'Space Grotesk', 'Inter', sans-serif !important;
 }
@@ -289,6 +326,59 @@ section:not(.hero-section) {
   border-radius: 0 !important;
   color: var(--inner-muted) !important;
   font-family: monospace;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--inner-accent);
+  outline-offset: 3px;
+}
+
+body.projects-page .content-section,
+body.projects-page .levels-section,
+body.projects-page .project-section {
+  border-color: var(--inner-line);
+}
+
+body.projects-page .hero-section {
+  min-height: clamp(560px, 78vh, 760px) !important;
+}
+
+body.projects-page .content-section,
+body.projects-page .levels-section,
+body.projects-page .project-section {
+  margin-inline: auto;
+  max-width: var(--inner-max);
+  padding-inline: 0;
+}
+
+body.projects-page .level-grid,
+body.projects-page .project-grid,
+body.projects-page .feature-grid,
+body.projects-page .info-grid {
+  gap: clamp(1rem, 2vw, 1.5rem);
+}
+
+body.projects-page .level-card,
+body.projects-page .project-card,
+body.projects-page .info-card,
+body.projects-page .usage-card {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+body.projects-page .section-title,
+body.projects-page .content-title,
+body.projects-page h1,
+body.projects-page h2,
+body.projects-page h3,
+body.projects-page h4 {
+  overflow-wrap: anywhere;
 }
 
 footer {
@@ -945,6 +1035,34 @@ html[data-theme="dark"] .archivo-page .timeline-date {
   .hero-section {
     min-height: auto !important;
     padding: 6.25rem 1.25rem 3.5rem !important;
+  }
+
+  body.projects-page .content-section,
+  body.projects-page .levels-section,
+  body.projects-page .project-section {
+    padding-inline: 1.25rem;
+  }
+
+  body.projects-page .hero-section {
+    min-height: auto !important;
+  }
+
+  body.projects-page .hero-container {
+    padding-top: 3.25rem !important;
+  }
+
+  body.projects-page .level-grid,
+  body.projects-page .project-grid,
+  body.projects-page .feature-grid,
+  body.projects-page .info-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  body.projects-page .code-block,
+  body.projects-page .terminal-window,
+  body.projects-page pre {
+    font-size: 0.78rem;
+    line-height: 1.55;
   }
 
   .hero-section::before {

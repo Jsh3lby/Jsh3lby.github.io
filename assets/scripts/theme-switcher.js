@@ -73,15 +73,12 @@ window.addEventListener('load', function() {
             // 3. Guardar en localStorage
             localStorage.setItem('portfolio-theme', theme);
             
-            // 4. Aplicar estilos inline solo si es necesario para override
-            if (theme === 'light') {
-                // Permitir que CSS maneje la mayoría de estilos
-                document.body.style.background = '#ffffff';
-                document.body.style.color = '#1e293b';
-            } else {
-                // Tema oscuro - limpiar estilos inline
-                document.body.style.background = '';
-                document.body.style.color = '';
+            // Mantener el aspecto centralizado en CSS para que todas las páginas
+            // respondan igual al cambiar de tema.
+            const themeColor = theme === 'dark' ? '#10110f' : '#f4f4f0';
+            const themeMeta = document.querySelector('meta[name="theme-color"]');
+            if (themeMeta) {
+                themeMeta.setAttribute('content', themeColor);
             }
             
             console.log(`✅ Tema ${theme} aplicado correctamente`);

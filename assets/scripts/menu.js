@@ -238,6 +238,20 @@ document.addEventListener('DOMContentLoaded', function() {
           [".timeline-entry h4", ["Jorge Herrera - ASIR Student", "Cybersecurity Skills", "Software and Video Game Tester", "Graphic and Multimedia Design", "Social Media Content Creator", "Higher Technician in ASIR", "Building Engineering Degree at UPM", "Hack4U Intro to Hacking Certification", "Google Cybersecurity Certification", "42 Telefonica Student", "Higher Degree in Marketing and Advertising", "Marketing and Graphic Design Assistant at Movistar Riders", "Marketing and Graphic Design Assistant at Atletico de Madrid Esports"]],
           [".timeline-entry p", ["Higher Technician in Network Computer Systems Administration (ASIR) student with a strong passion for cybersecurity and technical development.", "Specialized in penetration testing, vulnerability analysis, security audits and CTF challenge solving. Practical experience with Burp Suite, Wireshark and Nmap, plus strong knowledge of OWASP Top 10.", "Passionate about software quality and user experience. I enjoy testing video games and applications to ensure high standards, finding bugs and suggesting improvements.", "I am passionate about graphic design and multimedia content creation. I enjoy creative projects that combine art and technology.", "I create engaging content for social platforms. I grew an account from 0 to 200k in less than a year by analyzing market and audience and combining design and marketing skills.", "Currently studying advanced training in network computer systems administration, focused on cybersecurity, process automation and secure infrastructure management.", "Building Engineering student at Universidad Politecnica de Madrid, gaining knowledge in architectural design, construction and project management.", "I successfully completed Hack4U's professional program covering network security fundamentals, gaining practical skills to identify and mitigate vulnerabilities.", "I successfully completed Google's professional program covering security fundamentals, risk management, threat analysis, incident response, networking and cryptography.", "I participated in Telefonica's 42 training program, developing skills in programming, teamwork and problem-solving through practical projects.", "I gained knowledge in digital marketing strategies, advertising campaign management and market analysis.", "I collaborated in visual content creation and digital marketing strategies to increase visibility for the Movistar Riders brand.", "I collaborated in visual content creation and digital marketing strategies to increase visibility for the Atletico de Madrid Esports brand."]]
         ]
+      },
+      sobremi: {
+        title: "About Me - Jorge Herrera",
+        metaDescription: "Professional profile of Jorge Herrera, an ASIR student focused on cybersecurity, systems and technical development.",
+        textEntries: [
+          [".hero-badge span", "Professional Profile"],
+          [".hero-title", "About Me"],
+          [".hero-subtitle", "Discover my background, interests and skills as an ASIR student focused on cybersecurity."],
+          [".hero-cta.primary span:first-child", "Learn More"],
+          [".hero-cta.secondary span:first-child", "View Projects"],
+          ["#about .section-title", "My Professional Profile"],
+          ["#about .section-subtitle", "Explore my academic background, technical skills and experience in cybersecurity."],
+          ["footer p", "© 2025 Jorge Herrera. All rights reserved."]
+        ]
       }
     },
     fr: {
@@ -262,6 +276,20 @@ document.addEventListener('DOMContentLoaded', function() {
           ["#sobre-mi .about-cta .cta-button", "Voir mon parcours complet"],
           ["#contacto .title-accent", "Restons en contact"],
           ["#contacto .section-subtitle", "Une idee en tete? Parlons-en!"],
+          ["footer p", "© 2025 Jorge Herrera. Tous droits reserves."]
+        ]
+      },
+      sobremi: {
+        title: "A propos - Jorge Herrera",
+        metaDescription: "Profil professionnel de Jorge Herrera, etudiant ASIR specialise en cybersecurite, systemes et developpement technique.",
+        textEntries: [
+          [".hero-badge span", "Profil professionnel"],
+          [".hero-title", "A propos de moi"],
+          [".hero-subtitle", "Decouvrez mon parcours, mes passions et mes competences en tant qu'etudiant ASIR specialise en cybersecurite."],
+          [".hero-cta.primary span:first-child", "En savoir plus"],
+          [".hero-cta.secondary span:first-child", "Voir les projets"],
+          ["#about .section-title", "Mon profil professionnel"],
+          ["#about .section-subtitle", "Explorez mon parcours academique, mes competences techniques et mon experience en cybersecurite."],
           ["footer p", "© 2025 Jorge Herrera. Tous droits reserves."]
         ],
         htmlEntries: [
