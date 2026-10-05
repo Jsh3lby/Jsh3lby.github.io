@@ -519,10 +519,10 @@ footer p {
 }
 
 .archivo-page .timeline-date {
-  background: transparent !important;
-  border: 1px solid var(--inner-line);
+  background: rgba(156, 255, 87, 0.16) !important;
+  border: 1px solid rgba(49, 93, 26, 0.3);
   border-radius: 0 !important;
-  color: var(--inner-muted) !important;
+  color: var(--inner-accent-dark) !important;
   font-family: monospace;
   font-size: 0.68rem;
   font-weight: 400;
@@ -531,6 +531,12 @@ footer p {
   padding: 0.45rem 0.55rem;
   text-align: center;
   text-transform: uppercase;
+}
+
+html[data-theme="dark"] .archivo-page .timeline-date {
+  background: rgba(177, 255, 106, 0.12) !important;
+  border-color: rgba(177, 255, 106, 0.35);
+  color: var(--inner-accent) !important;
 }
 
 .archivo-page .timeline-content {
