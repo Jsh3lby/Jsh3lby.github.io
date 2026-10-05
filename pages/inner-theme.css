@@ -313,6 +313,22 @@ section:not(.hero-section) {
   max-width: var(--inner-max) !important;
 }
 
+body.projects-page .section-content,
+body.archivo-page .section-content,
+body.recursos-page .section-content,
+body.sobre-mi-page .section-content {
+  margin-inline: auto !important;
+  max-width: var(--inner-max) !important;
+  width: 100%;
+}
+
+body.projects-page .section-content > *,
+body.archivo-page .section-content > *,
+body.recursos-page .section-content > *,
+body.sobre-mi-page .section-content > * {
+  max-width: 100%;
+}
+
 .section-title,
 .content-title,
 .levels-section-title {

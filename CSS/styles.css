@@ -4056,6 +4056,33 @@ html[data-theme="dark"] .welcome {
   text-align: left;
 }
 
+@media (min-width: 769px) {
+  #proyectos .section-header,
+  #archivo .section-header,
+  #recursos .section-header,
+  #sobre-mi .section-header {
+    align-items: center;
+    display: block;
+    text-align: center;
+  }
+
+  #proyectos .section-title,
+  #archivo .section-title,
+  #recursos .section-title,
+  #sobre-mi .section-title {
+    margin-inline: auto !important;
+  }
+
+  #proyectos .section-subtitle,
+  #archivo .section-subtitle,
+  #recursos .section-subtitle,
+  #sobre-mi .section-subtitle {
+    margin: 1.25rem auto 0 !important;
+    max-width: 620px;
+    text-align: center;
+  }
+}
+
 footer {
   background: var(--mono-ink) !important;
   border: 0 !important;
