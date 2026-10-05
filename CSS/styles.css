@@ -3876,7 +3876,9 @@ html[data-theme="dark"] .welcome {
 
 .section-content {
   max-width: var(--mono-max-width);
+  margin-inline: auto;
   padding: 0 !important;
+  width: 100%;
 }
 
 .section-header {
