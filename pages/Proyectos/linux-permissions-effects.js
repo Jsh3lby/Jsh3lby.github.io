@@ -478,12 +478,6 @@ function addInteractiveCodeFeatures() {
             block.textContent = numberedLines;
         }
         
-        // Add syntax highlighting classes
-        block.innerHTML = block.innerHTML
-            .replace(/(\$|#)/g, '<span style="color: #60a5fa;">$1</span>')
-            .replace(/(chmod|chown|find|ls|grep)/g, '<span style="color: #10b981;">$1</span>')
-            .replace(/(-[a-zA-Z]+)/g, '<span style="color: #f59e0b;">$1</span>')
-            .replace(/(\/[^\s]*)/g, '<span style="color: #06b6d4;">$1</span>');
     });
 }
 
