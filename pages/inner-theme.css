@@ -481,6 +481,212 @@ body.projects-page .usage-card:hover {
   transform: translateY(-2px);
 }
 
+body.projects-page .completion-section {
+  background: transparent !important;
+  border: 0 !important;
+  border-top: 1px solid var(--inner-line) !important;
+  border-radius: 0 !important;
+  margin: 0 auto;
+  max-width: var(--inner-max);
+  padding: 5rem 0 6rem;
+}
+
+body.projects-page .completion-section::before,
+body.projects-page .completion-section::after,
+body.projects-page .mission-title::before,
+body.projects-page .mission-title::after,
+body.projects-page .hacker-badge::before,
+body.projects-page .final-cta::before,
+body.projects-page .reflection-text::before,
+body.projects-page .reflection-text::after {
+  display: none !important;
+}
+
+body.projects-page .mission-header {
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+body.projects-page .hacker-badge {
+  background: transparent !important;
+  border: 0 !important;
+  border-bottom: 1px solid var(--inner-line);
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  color: var(--inner-accent) !important;
+  font-family: monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  margin-bottom: 1.25rem;
+  padding: 0 0 0.8rem;
+}
+
+body.projects-page .mission-title {
+  background: none !important;
+  color: var(--inner-ink) !important;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  letter-spacing: -0.06em;
+  -webkit-text-fill-color: initial !important;
+}
+
+body.projects-page .completion-grid {
+  gap: 4rem;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  margin-bottom: 4rem;
+}
+
+body.projects-page .adventure-section,
+body.projects-page .reflection-section,
+body.projects-page .final-cta {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0;
+}
+
+body.projects-page .adventure-section {
+  border-top: 1px solid var(--inner-line) !important;
+  padding-top: 1.5rem;
+}
+
+body.projects-page .reflection-section {
+  border-top: 1px solid var(--inner-line) !important;
+  padding-top: 1.5rem;
+}
+
+body.projects-page .section-title-epic {
+  color: var(--inner-ink);
+  font-family: monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+body.projects-page .resource-cards {
+  gap: 0;
+}
+
+body.projects-page .resource-card {
+  border: 0 !important;
+  border-bottom: 1px solid var(--inner-line) !important;
+  border-radius: 0 !important;
+  padding: 1.25rem 0;
+}
+
+body.projects-page .resource-card::before {
+  display: none;
+}
+
+body.projects-page .resource-card:hover {
+  background: transparent !important;
+  transform: none;
+}
+
+body.projects-page .resource-title {
+  color: var(--inner-ink);
+  font-size: 1.05rem;
+}
+
+body.projects-page .resource-description,
+body.projects-page .reflection-text {
+  color: var(--inner-muted);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+body.projects-page .resource-link {
+  color: var(--inner-accent-dark);
+  font-family: monospace;
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+html[data-theme="dark"] body.projects-page .resource-link,
+html[data-theme="dark"] body.projects-page .skill-level {
+  color: var(--inner-accent);
+}
+
+body.projects-page .skills-showcase {
+  margin-top: 2rem;
+}
+
+body.projects-page .skills-grid {
+  gap: 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+body.projects-page .skill-badge {
+  background: transparent !important;
+  border: 0 !important;
+  border-bottom: 1px solid var(--inner-line);
+  border-radius: 0 !important;
+  padding: 1rem 0;
+  text-align: left;
+}
+
+body.projects-page .skill-badge::before {
+  display: none;
+}
+
+body.projects-page .skill-badge:hover {
+  background: transparent !important;
+  box-shadow: none;
+  transform: none;
+}
+
+body.projects-page .skill-name {
+  color: var(--inner-ink);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+}
+
+body.projects-page .final-cta {
+  border-top: 1px solid var(--inner-line) !important;
+  padding-top: 2rem;
+  text-align: left;
+}
+
+body.projects-page .final-cta h3 {
+  color: var(--inner-ink);
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  letter-spacing: -0.04em;
+}
+
+body.projects-page .final-cta p {
+  color: var(--inner-muted);
+  margin: 0.7rem 0 1.5rem;
+}
+
+body.projects-page .cta-buttons {
+  justify-content: flex-start;
+}
+
+body.projects-page .cta-btn {
+  background: transparent !important;
+  border: 1px solid var(--inner-line) !important;
+  border-radius: 2px !important;
+  box-shadow: none !important;
+  color: var(--inner-ink) !important;
+  font-family: monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 0.9rem;
+  text-transform: uppercase;
+}
+
+body.projects-page .cta-btn.primary {
+  background: var(--inner-accent) !important;
+  border-color: var(--inner-accent) !important;
+  color: #10110f !important;
+}
+
+body.projects-page .cta-btn:hover {
+  transform: none;
+}
+
 body.projects-page .section-title,
 body.projects-page .content-title,
 body.projects-page h1,
@@ -1186,6 +1392,33 @@ html[data-theme="dark"] .archivo-page .timeline-date {
   body.projects-page .hero-cta {
     justify-content: center;
     min-height: 44px;
+    width: 100%;
+  }
+
+  body.projects-page .completion-section {
+    padding: 3.5rem 1.25rem 4rem;
+  }
+
+  body.projects-page .completion-grid {
+    gap: 3rem;
+    grid-template-columns: 1fr;
+  }
+
+  body.projects-page .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  body.projects-page .mission-title {
+    font-size: clamp(2rem, 11vw, 3.2rem);
+  }
+
+  body.projects-page .cta-buttons {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  body.projects-page .cta-btn {
+    justify-content: center;
     width: 100%;
   }
 
