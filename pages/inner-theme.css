@@ -1212,6 +1212,35 @@ body.linux-permissions-page #uso .step-content pre {
   padding: 0.9rem 1rem;
 }
 
+body.linux-permissions-page #codigo .section-title {
+  color: var(--inner-ink) !important;
+}
+
+body.linux-permissions-page #codigo .code-content {
+  background: var(--inner-surface) !important;
+  border: 1px solid var(--inner-line);
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+body.linux-permissions-page #codigo .code-header {
+  background: var(--inner-ink) !important;
+  border-bottom: 1px solid var(--inner-line);
+}
+
+body.linux-permissions-page #codigo .code-title {
+  color: var(--inner-bg) !important;
+}
+
+body.linux-permissions-page #codigo .code-content pre,
+body.linux-permissions-page #codigo .code-content code {
+  color: var(--inner-ink) !important;
+}
+
+body.linux-permissions-page #codigo .code-content pre {
+  background: var(--inner-surface) !important;
+}
+
 footer {
   background: var(--inner-ink) !important;
   border: 0 !important;
