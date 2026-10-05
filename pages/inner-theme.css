@@ -675,3 +675,107 @@ html[data-theme="dark"] .archivo-page .timeline-date {
     gap: 1rem;
   }
 }
+
+/* Resources index: editorial layout at every viewport size. */
+.recursos-page .tag-cloud {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  justify-content: flex-start;
+  margin-bottom: 2.5rem;
+  padding: 0;
+}
+
+.recursos-page .tag {
+  background: transparent !important;
+  border: 1px solid var(--inner-line) !important;
+  border-radius: 0 !important;
+  color: var(--inner-muted) !important;
+  font-family: monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  padding: 0.55rem 0.7rem;
+  text-transform: uppercase;
+}
+
+.recursos-page .tag.active,
+.recursos-page .tag:hover {
+  background: var(--inner-accent) !important;
+  border-color: var(--inner-accent) !important;
+  color: #10110f !important;
+}
+
+.recursos-page .timeline-item {
+  background: transparent !important;
+}
+
+.recursos-page .timeline-entry,
+.recursos-page .timeline-entry:hover {
+  background: transparent !important;
+  border: 0 !important;
+  border-bottom: 1px solid var(--inner-line) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  transform: none;
+}
+
+.recursos-page .timeline-date {
+  background: transparent !important;
+  border: 1px solid var(--inner-line);
+  border-radius: 0 !important;
+  color: var(--inner-muted) !important;
+  font-family: monospace;
+  font-size: 0.66rem;
+  padding: 0.4rem 0.5rem;
+  text-transform: uppercase;
+}
+
+.recursos-page .timeline-content {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.recursos-page .timeline-content h4 {
+  color: var(--inner-ink) !important;
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.recursos-page .resource-links {
+  gap: 0.45rem;
+}
+
+.recursos-page .resource-btn {
+  background: transparent !important;
+  border: 1px solid var(--inner-line) !important;
+  border-radius: 2px !important;
+  box-shadow: none !important;
+  color: var(--inner-muted) !important;
+  font-family: monospace;
+  font-size: 0.62rem !important;
+  letter-spacing: 0.04em;
+  padding: 0.5rem 0.65rem;
+  text-transform: uppercase;
+}
+
+.recursos-page .resource-btn:hover {
+  background: var(--inner-accent) !important;
+  border-color: var(--inner-accent) !important;
+  color: #10110f !important;
+}
+
+.recursos-page .cta-section {
+  background: transparent !important;
+  border-top: 1px solid var(--inner-line);
+  margin-top: 2rem;
+  padding: 2rem 0 0;
+}
+
+.recursos-page .cta-section h3 {
+  color: var(--inner-ink);
+  font-size: 1.2rem;
+  letter-spacing: -0.03em;
+}
