@@ -163,14 +163,12 @@
           </p>
         </div>
         
-        <div class="tag-cloud" role="group" aria-label="Filtrar hitos por etiquetas">
+        <div class="tag-cloud" role="group" aria-label="Filtrar hitos por categorías">
           <span class="tag active" data-filter="all">Todos</span>
-          <span class="tag" data-filter="ciberseguridad">Ciberseguridad</span>
-          <span class="tag" data-filter="python">Python</span>
-          <span class="tag" data-filter="sql">SQL</span>
-          <span class="tag" data-filter="bash">Bash</span>
-          <span class="tag" data-filter="linux">Linux</span>
+          <span class="tag" data-filter="proyectos">Proyectos</span>
           <span class="tag" data-filter="certificaciones">Certificaciones</span>
+          <span class="tag" data-filter="ciberseguridad">Seguridad</span>
+          <span class="tag" data-filter="sistemas">Sistemas</span>
         </div>
 
         <div class="timeline">
@@ -179,24 +177,7 @@
             <ul>
               
               
-              <!-- <li class="timeline-entry" data-tags="ciberseguridad python">
-                <span class="timeline-date">Mayo</span>
-                <div class="timeline-content">
-                  <h4>🚀 Proyecto de Código Avanzado (En Desarrollo)</h4>
-                  <p>Iniciativa de desarrollo de una herramienta especializada en Python para análisis de seguridad. El proyecto se encuentra en fase de conceptualización y diseño arquitectónico, enfocándose en automatización de procesos de ciberseguridad y análisis de vulnerabilidades.</p>
-                  <div class="tech-tags">
-                    <span>Python Development</span>
-                    <span>Security Tools</span>
-                    <span>Automation</span>
-                    <span>Architecture Design</span>
-                  </div>
-                  <a href="proyectos.html?tag=ciberseguridad" class="cta-button" aria-label="Ver proyectos de ciberseguridad">
-                    📂 Ver Proyectos
-                  </a>
-                </div>
-              </li> -->
-              
-              <li class="timeline-entry" data-tags="ciberseguridad linux bash">
+              <li class="timeline-entry" data-tags="proyectos ciberseguridad sistemas">
                 <span class="timeline-date">Mayo</span>
                 <div class="timeline-content">
                   <h4>🔐 Mastery: Niveles Bandit de OverTheWire</h4>
@@ -213,8 +194,9 @@
                   </a>
                 </div>
               </li>
+              </li>
 
-              <li class="timeline-entry" data-tags="ciberseguridad python">
+              <li class="timeline-entry" data-tags="proyectos ciberseguridad">
                 <span class="timeline-date">Abril</span>
                 <div class="timeline-content">
                   <h4>📋 Análisis Completo de Vulnerabilidades</h4>
@@ -231,11 +213,6 @@
                   </a>
                 </div>
               </li>
-            </ul>
-          </div>
-
-          
-              </li>
               <li class="timeline-entry" data-tags="certificaciones ciberseguridad">
                 <span class="timeline-date">Marzo</span>
                 <div class="timeline-content">
@@ -250,7 +227,7 @@
                 </div>
               </li>
 
-              <li class="timeline-entry" data-tags="ciberseguridad python sql">
+              <li class="timeline-entry" data-tags="proyectos ciberseguridad">
                 <span class="timeline-date">Febrero</span>
                 <div class="timeline-content">
                   <h4>🛡️ Sistema de Filtros SQL Seguros</h4>
@@ -268,7 +245,7 @@
                 </div>
               </li>
 
-              <li class="timeline-entry" data-tags="linux bash">
+              <li class="timeline-entry" data-tags="proyectos sistemas">
                 <span class="timeline-date">Febrero</span>
                 <div class="timeline-content">
                   <h4>⚙️ Gestor Avanzado de Permisos Linux</h4>
@@ -284,6 +261,7 @@
                     🔧 Ver Herramientas
                   </a>
                 </div>
+              </li>
 
               <li class="timeline-entry" data-tags="certificaciones">
                 <span class="timeline-date">Febrero</span>
@@ -309,6 +287,8 @@
                   </div>
                 </div>
               </li>
+            </ul>
+          </div>
 
           <div class="timeline-item" data-year="2024">
             <h3>2024</h3>
@@ -352,6 +332,8 @@
                   </div>
                 </div>
               </li>
+            </ul>
+          </div>
 
           <div class="timeline-item" data-year="2023">
             <h3>2023</h3>
@@ -388,7 +370,8 @@
           </div>
           <div class="timeline-item" data-year="2022">
             <h3>2022</h3>
-            <li class="timeline-entry" data-tags="ciberseguridad python">
+            <ul>
+            <li class="timeline-entry" data-tags="proyectos ciberseguridad">
                 <span class="timeline-date">agosto</span>
                 <div class="timeline-content">
                   <h4>📋 Práctica De Herramienta Autopsy</h4>
@@ -416,6 +399,7 @@
                   </a>
                 </div>
               </li>
+            </ul>
         </div>
 
         <div class="cta-section">
@@ -457,7 +441,7 @@
             
             if (shouldShow) {
               setTimeout(() => {
-                entry.style.display = 'flex';
+                entry.style.display = '';
                 entry.classList.add('filter-show');
                 entry.classList.remove('filter-hide');
               }, index * 50);
