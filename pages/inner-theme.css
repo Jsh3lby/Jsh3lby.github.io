@@ -903,6 +903,169 @@ html[data-theme="dark"] .archivo-page .timeline-date {
 
 .sobre-mi-page .tech-tags {
   gap: 0.4rem;
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding: 0 0.9rem !important;
+  }
+
+  nav .nav-brand .logo {
+    height: 30px !important;
+  }
+
+  nav .lang-btn {
+    height: 34px !important;
+    width: 42px !important;
+  }
+
+  nav .theme-btn,
+  nav .hamburger {
+    height: 34px !important;
+    width: 34px !important;
+  }
+
+  nav .nav-links {
+    box-sizing: border-box;
+    left: auto !important;
+    max-width: 100vw;
+    right: 0 !important;
+    width: min(22rem, 100vw) !important;
+  }
+
+  nav.has-lang-switcher .lang-switcher {
+    right: 7.5rem;
+  }
+
+  .back-btn-container {
+    left: 1rem !important;
+    top: 82px !important;
+  }
+
+  .hero-section {
+    min-height: auto !important;
+    padding: 6.25rem 1.25rem 3.5rem !important;
+  }
+
+  .hero-section::before {
+    left: 1.25rem;
+    top: 6.25rem;
+  }
+
+  .hero-container {
+    padding-top: 3.25rem !important;
+  }
+
+  .hero-title {
+    font-size: clamp(2.8rem, 15vw, 4.5rem) !important;
+    line-height: 0.94 !important;
+    margin: 1.5rem 0 !important;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem !important;
+    line-height: 1.55;
+    margin-bottom: 2rem !important;
+  }
+
+  .hero-stats {
+    gap: 0.75rem;
+    justify-content: space-between !important;
+    padding-top: 1.25rem;
+  }
+
+  .stat-item,
+  .stat {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .stat-number {
+    font-size: 1.55rem !important;
+  }
+
+  .stat-label {
+    font-size: 0.58rem !important;
+    letter-spacing: 0.06em;
+    line-height: 1.25;
+  }
+
+  .hero-actions {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0.65rem;
+    margin-top: 1.5rem;
+  }
+
+  .hero-cta {
+    justify-content: center;
+    min-height: 44px;
+    padding: 0.7rem 0.85rem !important;
+    width: 100%;
+  }
+
+  .recursos-page .archive-section,
+  .sobre-mi-page .archive-section,
+  .archivo-page .archive-section {
+    padding: 3.5rem 1.25rem 4rem;
+  }
+
+  .section-content {
+    width: 100%;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+  }
+
+  .section-title {
+    font-size: clamp(2rem, 10vw, 3rem) !important;
+    line-height: 1;
+  }
+
+  .section-subtitle {
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  .sobre-mi-page .timeline-item,
+  .recursos-page .timeline-item,
+  .archivo-page .timeline-item {
+    padding: 1.75rem 0 0;
+  }
+
+  .sobre-mi-page .timeline-entry,
+  .recursos-page .timeline-entry,
+  .archivo-page .timeline-entry {
+    padding: 1.25rem 0;
+  }
+
+  .sobre-mi-page .timeline-content p,
+  .recursos-page .timeline-content p,
+  .archivo-page .timeline-content p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .sobre-mi-page .timeline-content h4,
+  .recursos-page .timeline-content h4,
+  .archivo-page .timeline-content h4 {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+
+  .sobre-mi-page .tech-tags,
+  .recursos-page .resource-links,
+  .archivo-page .tech-tags {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .sobre-mi-page .cta-button,
+  .recursos-page .resource-btn,
+  .archivo-page .cta-button {
+    min-height: 40px;
+  }
   margin-bottom: 1rem;
 }
 
