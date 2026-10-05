@@ -707,6 +707,37 @@ html[data-theme="dark"] .archivo-page .timeline-date {
 
 .recursos-page .timeline-item {
   background: transparent !important;
+  border-top: 1px solid var(--inner-line);
+  padding: 2.5rem 0 0;
+}
+
+.recursos-page .timeline-item::before {
+  color: var(--inner-accent-dark);
+  content: attr(data-year);
+  display: block;
+  font-family: monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  margin-bottom: 0.7rem;
+  text-transform: uppercase;
+}
+
+.recursos-page .timeline-item h3 {
+  color: var(--inner-ink) !important;
+  font-size: clamp(1.45rem, 3vw, 2.2rem);
+  letter-spacing: -0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.recursos-page .resource-section-intro {
+  color: var(--inner-muted);
+  font-size: 0.9rem;
+  margin: 0 0 1.5rem;
+  max-width: 620px;
+}
+
+.recursos-page .timeline-item ul {
+  display: block;
 }
 
 .recursos-page .timeline-entry,
@@ -778,4 +809,8 @@ html[data-theme="dark"] .archivo-page .timeline-date {
   color: var(--inner-ink);
   font-size: 1.2rem;
   letter-spacing: -0.03em;
+}
+
+.recursos-page .cta-section p {
+  color: var(--inner-muted) !important;
 }

@@ -165,20 +165,11 @@
           </p>
         </div>
         
-        <div class="tag-cloud" role="group" aria-label="Filtrar recursos por categorías">
-          <span class="tag active" data-filter="all">Todo</span>
-          <span class="tag" data-filter="lenguajes">Lenguajes</span>
-          <span class="tag" data-filter="ciberseguridad">Ciberseguridad</span>
-          <span class="tag" data-filter="frameworks">Frameworks</span>
-          <span class="tag" data-filter="herramientas">Herramientas</span>
-          <span class="tag" data-filter="sistemas">Sistemas</span>
-          <span class="tag" data-filter="bases-datos">Bases de Datos</span>
-        </div>
-
         <div class="timeline">
           <!-- Lenguajes de Programación -->
           <div class="timeline-item" data-year="Lenguajes">
             <h3>Lenguajes de Programación</h3>
+            <p class="resource-section-intro">Lenguajes que utilizo para automatización, desarrollo web y análisis técnico.</p>
             <ul>
               <li class="timeline-entry" data-tags="lenguajes ciberseguridad">
                 <span class="timeline-date">Principal</span>
@@ -304,6 +295,7 @@
           <!-- Herramientas de Ciberseguridad -->
           <div class="timeline-item" data-year="Ciberseguridad">
             <h3>Herramientas de Ciberseguridad</h3>
+            <p class="resource-section-intro">Herramientas para reconocimiento, análisis de tráfico y pruebas de seguridad web.</p>
             <ul>
               <li class="timeline-entry" data-tags="ciberseguridad herramientas">
                 <span class="timeline-date">Esencial</span>
@@ -376,6 +368,7 @@
           <!-- Sistemas y Plataformas -->
           <div class="timeline-item" data-year="Sistemas">
             <h3>Sistemas y Plataformas</h3>
+            <p class="resource-section-intro">Entornos que utilizo para administrar sistemas, laboratorios y máquinas virtuales.</p>
             <ul>
               <li class="timeline-entry" data-tags="sistemas ciberseguridad">
                 <span class="timeline-date">Principal</span>
@@ -427,6 +420,7 @@
           <!-- Herramientas de Desarrollo -->
           <div class="timeline-item" data-year="Desarrollo">
             <h3>Herramientas de Desarrollo</h3>
+            <p class="resource-section-intro">Aplicaciones y servicios que forman parte de mi flujo de trabajo diario.</p>
             <ul>
               <li class="timeline-entry" data-tags="herramientas frameworks">
                 <span class="timeline-date">Editor</span>
@@ -478,6 +472,7 @@
           <!-- Bases de Datos -->
           <div class="timeline-item" data-year="Bases de Datos">
             <h3>Gestión de Datos</h3>
+            <p class="resource-section-intro">Tecnologías para consultar, filtrar y proteger información estructurada.</p>
             <ul>
               <li class="timeline-entry" data-tags="bases-datos ciberseguridad">
                 <span class="timeline-date">Relacional</span>
@@ -508,6 +503,7 @@
           <!-- Plataformas de Aprendizaje -->
           <div class="timeline-item" data-year="Aprendizaje">
             <h3>Plataformas de Especialización</h3>
+            <p class="resource-section-intro">Plataformas prácticas para reforzar conocimientos mediante laboratorios y retos.</p>
             <ul>
               <li class="timeline-entry" data-tags="ciberseguridad herramientas">
                 <span class="timeline-date">CTF</span>
@@ -577,81 +573,5 @@
   <script src="../assets/scripts/menu.js" defer></script>
   <script src="../assets/scripts/theme-switcher.js" defer></script>
   <script src="../assets/scripts/scroll-effects.js" defer></script>
-  <script>
-    // Filtro de recursos por etiquetas con animaciones suaves (basado en archivo.html)
-    document.addEventListener('DOMContentLoaded', function() {
-      const tags = document.querySelectorAll('.tag');
-      const entries = document.querySelectorAll('.timeline-entry');
-
-      tags.forEach(tag => {
-        tag.addEventListener('click', function() {
-          const filter = this.getAttribute('data-filter').toLowerCase();
-          
-          // Actualizar tags activos
-          tags.forEach(t => t.classList.remove('active'));
-          this.classList.add('active');
-          
-          // Animar filtrado
-          entries.forEach((entry, index) => {
-            const entryTags = entry.getAttribute('data-tags').toLowerCase();
-            const shouldShow = filter === 'all' || entryTags.includes(filter);
-            
-            if (shouldShow) {
-              setTimeout(() => {
-                entry.style.display = '';
-                entry.style.opacity = '1';
-                entry.style.transform = 'translateY(0)';
-              }, index * 50);
-            } else {
-              entry.style.opacity = '0';
-              entry.style.transform = 'translateY(20px)';
-              setTimeout(() => {
-                entry.style.display = 'none';
-              }, 300);
-            }
-          });
-        });
-      });
-
-      // Prefiltrar según parámetro URL
-      const urlParams = new URLSearchParams(window.location.search);
-      const tag = urlParams.get('tag')?.toLowerCase();
-      if (tag) {
-        const activeTag = document.querySelector(`.tag[data-filter="${tag}"]`);
-        if (activeTag) {
-          activeTag.click();
-        }
-      }
-
-      // Animaciones de entrada al scroll
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-          }
-        });
-      }, { threshold: 0.1 });
-
-      entries.forEach(entry => {
-        observer.observe(entry);
-      });
-    });
-
-    // Efecto parallax sutil en hero stats
-    document.addEventListener('mousemove', (e) => {
-      const stats = document.querySelectorAll('.stat-item');
-      const mouseX = e.clientX / window.innerWidth;
-      const mouseY = e.clientY / window.innerHeight;
-      
-      stats.forEach((stat, index) => {
-        const speed = (index + 1) * 0.3;
-        const x = (mouseX - 0.5) * speed;
-        const y = (mouseY - 0.5) * speed;
-        
-        stat.style.transform = `translateX(${x}px) translateY(${y}px)`;
-      });
-    });
-  </script>
 </body>
 </html>
