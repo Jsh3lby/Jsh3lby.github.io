@@ -747,6 +747,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (navLinksContainer && hamburger) {
       navLinksContainer.classList.remove('active');
       hamburger.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', 'false');
       document.body.style.overflow = '';
 
       const currentLanguage = getCurrentLanguage();
@@ -760,6 +761,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (navLinksContainer && hamburger) {
       navLinksContainer.classList.add('active');
       hamburger.classList.add('active');
+      hamburger.setAttribute('aria-expanded', 'true');
       document.body.style.overflow = 'hidden';
 
       const currentLanguage = getCurrentLanguage();

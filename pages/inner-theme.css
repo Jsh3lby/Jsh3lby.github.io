@@ -116,16 +116,52 @@ nav .nav-link::after {
 
 nav .theme-btn {
   background: transparent !important;
-  border: 1px solid var(--inner-line) !important;
-  border-radius: 2px !important;
-  color: var(--inner-ink) !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  color: var(--inner-accent) !important;
   height: 36px !important;
   width: 36px !important;
 }
 
 nav .theme-btn:hover {
-  background: var(--inner-accent) !important;
-  border-color: var(--inner-accent) !important;
+  background: transparent !important;
+  color: var(--inner-accent-dark) !important;
+  transform: translateY(-1px);
+}
+
+nav .lang-btn {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  color: var(--inner-accent) !important;
+}
+
+nav .lang-btn:hover {
+  background: transparent !important;
+  border-color: transparent !important;
+  color: var(--inner-accent-dark) !important;
+}
+
+nav .lang-menu {
+  background: var(--inner-bg);
+  border-color: var(--inner-line);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.16);
+}
+
+nav .lang-option {
+  color: var(--inner-muted);
+}
+
+nav .lang-option:hover,
+nav .lang-option.active {
+  background: transparent;
+  border-color: var(--inner-line);
+  color: var(--inner-accent-dark);
+}
+
+html[data-theme="dark"] nav .lang-option:hover,
+html[data-theme="dark"] nav .lang-option.active {
+  color: var(--inner-accent);
 }
 
 main {
@@ -867,8 +903,24 @@ footer p {
 
   nav .nav-links {
     background: var(--inner-bg) !important;
-    border-bottom: 1px solid var(--inner-line);
-    box-shadow: none !important;
+    border-left: 1px solid var(--inner-line);
+    border-bottom: 0;
+    box-shadow: -18px 0 40px rgba(0, 0, 0, 0.18) !important;
+  }
+
+  nav .hamburger {
+    background: transparent !important;
+    border: 0 !important;
+    color: var(--inner-accent) !important;
+  }
+
+  nav .hamburger span {
+    background: var(--inner-accent) !important;
+  }
+
+  nav .hamburger:hover span,
+  nav .hamburger.active span {
+    background: var(--inner-ink) !important;
   }
 
   main {
