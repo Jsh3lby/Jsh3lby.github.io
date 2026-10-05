@@ -777,7 +777,8 @@ body.projects-page .conclusion-box {
   border-top: 1px solid var(--inner-line);
   border-radius: 0 !important;
   margin: 0;
-  padding: 2rem 0 0;
+  padding: 2rem 0 0 1.25rem;
+  text-align: left !important;
 }
 
 body.projects-page .conclusion-box h3 {
@@ -785,18 +786,24 @@ body.projects-page .conclusion-box h3 {
   font-size: clamp(1.35rem, 3vw, 2rem);
   letter-spacing: -0.04em;
   margin-bottom: 1.25rem;
+  text-align: left !important;
 }
 
 body.projects-page .conclusion-box p {
   color: var(--inner-muted);
   font-size: 0.95rem;
   line-height: 1.75;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem;
   max-width: 820px;
+  text-align: left !important;
 }
 
 body.projects-page .conclusion-box strong {
-  color: var(--inner-ink);
+  color: var(--inner-accent-dark);
+}
+
+html[data-theme="dark"] body.projects-page .conclusion-box strong {
+  color: var(--inner-accent);
 }
 
 body.projects-page .section-title,
@@ -1564,6 +1571,10 @@ html[data-theme="dark"] .archivo-page .timeline-date {
   body.projects-page .lesson-card:first-child {
     border-top: 0;
     padding-top: 0;
+  }
+
+  body.projects-page .conclusion-box {
+    padding-left: 0;
   }
 
   body.projects-page .hero-container {
