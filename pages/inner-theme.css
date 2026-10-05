@@ -1122,6 +1122,96 @@ body.linux-permissions-page .final-cta-section {
   text-align: left;
 }
 
+body.linux-permissions-page #uso .usage-grid {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+body.linux-permissions-page #uso .usage-card {
+  background: transparent !important;
+  border: 0 !important;
+  border-top: 1px solid var(--inner-line) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  overflow: visible;
+  padding: 1.5rem 0 0;
+  transform: none !important;
+}
+
+body.linux-permissions-page #uso .usage-header {
+  background: transparent !important;
+  border-bottom: 1px solid var(--inner-line);
+  color: var(--inner-ink) !important;
+  padding: 0 0 1rem;
+  text-align: left;
+}
+
+body.linux-permissions-page #uso .usage-header h3 {
+  color: var(--inner-ink) !important;
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+  letter-spacing: -0.04em;
+}
+
+body.linux-permissions-page #uso .usage-steps {
+  background: transparent !important;
+  padding: 0;
+}
+
+body.linux-permissions-page #uso .step {
+  border-bottom: 1px solid var(--inner-line);
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 2.5rem minmax(0, 1fr);
+  margin: 0;
+  padding: 1.5rem 0;
+}
+
+body.linux-permissions-page #uso .step:last-child {
+  border-bottom: 0;
+}
+
+body.linux-permissions-page #uso .step-number {
+  align-items: center;
+  background: transparent !important;
+  border: 1px solid var(--inner-line);
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  color: var(--inner-accent-dark) !important;
+  display: flex;
+  font-family: monospace;
+  font-size: 0.75rem;
+  height: 2rem;
+  justify-content: center;
+  width: 2rem;
+}
+
+html[data-theme="dark"] body.linux-permissions-page #uso .step-number {
+  color: var(--inner-accent) !important;
+}
+
+body.linux-permissions-page #uso .step-content h4 {
+  color: var(--inner-ink) !important;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+body.linux-permissions-page #uso .step-content p {
+  color: var(--inner-muted) !important;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin-bottom: 0.9rem;
+}
+
+body.linux-permissions-page #uso .step-content pre {
+  background: var(--inner-surface) !important;
+  border: 1px solid var(--inner-line) !important;
+  border-radius: 0 !important;
+  color: var(--inner-ink) !important;
+  margin: 0;
+  padding: 0.9rem 1rem;
+}
+
 footer {
   background: var(--inner-ink) !important;
   border: 0 !important;
@@ -1879,6 +1969,14 @@ html[data-theme="dark"] .archivo-page .timeline-date {
   body.sql-filters-page .section-title,
   body.linux-permissions-page .section-title {
     font-size: clamp(1.8rem, 9vw, 2.5rem);
+  }
+
+  body.linux-permissions-page #uso .usage-grid {
+    grid-template-columns: 1fr;
+  }
+
+  body.linux-permissions-page #uso .usage-card {
+    padding-top: 1.25rem;
   }
 
   body.projects-page .hero-title {
