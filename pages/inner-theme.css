@@ -501,6 +501,12 @@ footer p {
   padding: 1.5rem 0;
 }
 
+.archivo-page .section-title {
+  color: var(--inner-accent-dark) !important;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+
 .archivo-page .timeline-entry,
 .archivo-page .timeline-entry:hover {
   background: transparent !important;
