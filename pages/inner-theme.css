@@ -584,6 +584,44 @@ footer p {
   color: #10110f !important;
 }
 
+.archivo-page .cta-section {
+  align-items: center;
+  background: transparent !important;
+  border-bottom: 0;
+  border-radius: 0 !important;
+  border-top: 1px solid var(--inner-line);
+  box-shadow: none !important;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 2rem 0 0;
+  text-align: left;
+}
+
+.archivo-page .cta-section p {
+  color: var(--inner-muted) !important;
+  font-family: monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.archivo-page .cta-section .cta-button {
+  background: var(--inner-accent) !important;
+  border-color: var(--inner-accent) !important;
+  color: #10110f !important;
+  flex-shrink: 0;
+  padding: 0.7rem 0.9rem;
+}
+
+.archivo-page .cta-section .cta-button:hover {
+  background: transparent !important;
+  border-color: var(--inner-ink) !important;
+  color: var(--inner-ink) !important;
+}
+
 @media (max-width: 800px) {
   .recursos-page .timeline-item ul {
     grid-template-columns: 1fr;
@@ -617,5 +655,11 @@ footer p {
   .archivo-page .timeline-date {
     display: inline-block;
     margin-bottom: 0.8rem;
+  }
+
+  .archivo-page .cta-section {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
   }
 }
