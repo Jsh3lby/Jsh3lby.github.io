@@ -425,6 +425,14 @@ body.projects-page .hero-title {
   -webkit-text-fill-color: initial !important;
 }
 
+body.projects-page .hero-title .title-highlight,
+body.projects-page .hero-title .title-main {
+  color: inherit !important;
+  display: inline !important;
+  margin: 0 !important;
+  -webkit-text-fill-color: inherit !important;
+}
+
 body.projects-page .hero-subtitle {
   color: var(--inner-muted) !important;
   font-size: clamp(0.95rem, 2vw, 1.15rem) !important;
