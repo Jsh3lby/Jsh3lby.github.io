@@ -164,6 +164,38 @@ document.addEventListener('DOMContentLoaded', function() {
           [".project-card .cta-button", ["View Documentation", "View Documentation", "View Tool", "View Project", "View Scripts", "In Progress", "In Research"]]
         ]
       },
+      "mi-pagina-web": {
+        title: "My Website - Jorge Herrera",
+        metaDescription: "Complete technical documentation of the design and development of Jorge Herrera's personal portfolio website.",
+        textEntries: [
+          [".hero-badge span:last-child", "Web Development Project"],
+          [".hero-title", "My Website"],
+          [".hero-subtitle", "Complete documentation of the development of my personal portfolio website. From the initial concept to the final implementation, a detailed technical guide."],
+          [".hero-cta.primary span:first-child", "View Development"],
+          [".hero-cta.secondary span:first-child", "View Site"],
+          ["#development-phases .section-title", "Development Phases"],
+          ["#development-phases .section-subtitle", "Explore each stage of the development process with technical explanations, design decisions and practical implementations."],
+          ["#detailed-guide .section-title", "Detailed Development Guide"],
+          ["#detailed-guide .section-subtitle", "A complete step-by-step process with source code and explained technical decisions."],
+          ["#lessons-learned .levels-section-title", "Lessons Learned and Best Practices"],
+          ["#lessons-learned .lesson-card:nth-child(1) h3", "Planning Is Key"],
+          ["#lessons-learned .lesson-card:nth-child(1) p", "Investing time in initial planning and wireframing saves hours of later refactoring."],
+          ["#lessons-learned .lesson-card:nth-child(2) h3", "Mobile First"],
+          ["#lessons-learned .lesson-card:nth-child(2) p", "Designing for mobile first and scaling up results in better experiences and cleaner code."],
+          ["#lessons-learned .lesson-card:nth-child(3) h3", "Performance Matters"],
+          ["#lessons-learned .lesson-card:nth-child(3) p", "Users abandon slow websites. Optimization belongs at the beginning, not as an afterthought."],
+          [".conclusion-box h3", "Project Conclusion"],
+          ["footer p", "© 2025 Jorge Herrera. All rights reserved."]
+        ],
+        listEntries: [
+          [".hero-stats .stat-label", ["Weeks", "Completed", "Technologies"]],
+          ["#development-phases .level-title", ["Planning", "Design", "Development", "Testing & Deployment"]],
+          ["#development-phases .level-description", ["Research, requirements analysis, information architecture and conceptual design.", "Visual identity, color palette, typography, component system and mockups.", "Semantic HTML, modern CSS, interactive JavaScript and optimization.", "Compatibility testing, performance optimization, accessibility and deployment."]],
+          ["#detailed-guide .levels-section-title", ["Planning and Analysis", "Design and User Experience", "Development and Implementation", "Testing and Deployment", "Lessons Learned and Best Practices"]],
+          [".level-detail-header .level-title", ["Research and References", "Information Architecture", "Visual Identity", "Color System", "Typography", "Component System", "Semantic HTML Structure", "CSS and Responsive Design", "JavaScript Interactions", "Performance Optimization", "Browser Compatibility", "Accessibility", "Deployment", "Monitoring and Maintenance"]],
+          [".level-detail-header .difficulty", ["Strategic", "Strategic", "Creative", "Creative", "Creative", "Technical", "Technical", "Technical", "Technical", "Technical", "Validation", "Validation", "Operational", "Operational"]]
+        ]
+      },
       archivo: {
         title: "Archive - Jorge Herrera",
         metaDescription: "Timeline of Jorge Herrera's projects, certifications and milestones in cybersecurity, technical development and video game design.",
@@ -334,6 +366,35 @@ document.addEventListener('DOMContentLoaded', function() {
           [".project-card h3", ["Guide des niveaux Bandit", "Mon site web", "Scanner de ports en Bash", "Filtres SQL securises", "Gestionnaire des permissions Linux", "Jeu video personnalise", "Outil de securite avance"]],
           [".project-card > p", ["Documentation complete du challenge Bandit d'OverTheWire, avec 34 niveaux progressifs de securite Linux.", "Documentation complete du processus de creation de ce portfolio web, du concept a l'implementation finale.", "Outil educatif pour detecter les ports ouverts sur des hotes et reseaux complets, developpe en Bash avec /dev/tcp.", "Systeme robuste de protection contre les injections SQL pour applications web.", "Scripts specialises pour automatisation et audit des permissions Linux en environnement entreprise.", "Developpement d'un jeu complet en Python avec Pygame, mecaniques innovantes et architecture modulaire.", "Developpement d'un outil Python specialise pour analyse de securite et automatisation des processus cybersecurite."]],
           [".project-card .cta-button", ["Voir documentation", "Voir documentation", "Voir outil", "Voir projet", "Voir scripts", "En cours", "En recherche"]]
+        ]
+      },
+      "mi-pagina-web": {
+        title: "Mon site web - Jorge Herrera",
+        metaDescription: "Documentation technique complète de la conception et du développement du portfolio personnel de Jorge Herrera.",
+        textEntries: [
+          [".hero-badge span:last-child", "Projet de développement web"],
+          [".hero-title", "Mon site web"],
+          [".hero-subtitle", "Documentation complète du développement de mon portfolio personnel. Du concept initial à la mise en œuvre finale, un guide technique détaillé."],
+          [".hero-cta.primary span:first-child", "Voir le développement"],
+          [".hero-cta.secondary span:first-child", "Voir le site"],
+          ["#development-phases .section-title", "Phases de développement"],
+          ["#development-phases .section-subtitle", "Explorez chaque étape du développement avec des explications techniques, des choix de conception et des mises en œuvre pratiques."],
+          ["#detailed-guide .section-title", "Guide détaillé du développement"],
+          ["#detailed-guide .section-subtitle", "Un processus complet étape par étape, avec le code source et les décisions techniques expliquées."],
+          ["#lessons-learned .levels-section-title", "Leçons apprises et bonnes pratiques"],
+          ["#lessons-learned .lesson-card:nth-child(1) h3", "La planification est essentielle"],
+          ["#lessons-learned .lesson-card:nth-child(1) p", "Consacrer du temps à la planification initiale et aux wireframes permet d'éviter des heures de refactorisation."],
+          ["#lessons-learned .lesson-card:nth-child(2) h3", "Mobile First"],
+          ["#lessons-learned .lesson-card:nth-child(2) p", "Concevoir d'abord pour mobile puis adapter le design offre de meilleures expériences et un code plus propre."],
+          ["#lessons-learned .lesson-card:nth-child(3) h3", "La performance compte"],
+          ["#lessons-learned .lesson-card:nth-child(3) p", "Les utilisateurs quittent les sites lents. L'optimisation doit commencer dès le début."],
+          [".conclusion-box h3", "Conclusion du projet"],
+          ["footer p", "© 2025 Jorge Herrera. Tous droits réservés."]
+        ],
+        listEntries: [
+          [".hero-stats .stat-label", ["Semaines", "Terminé", "Technologies"]],
+          ["#development-phases .level-title", ["Planification", "Conception", "Développement", "Tests et déploiement"]],
+          ["#detailed-guide .levels-section-title", ["Planification et analyse", "Conception et expérience utilisateur", "Développement et mise en œuvre", "Tests et déploiement", "Leçons apprises et bonnes pratiques"]]
         ]
       },
       archivo: {
