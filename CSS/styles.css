@@ -3752,16 +3752,18 @@ nav {
 }
 
 .theme-btn {
-  border: 1px solid var(--mono-line) !important;
-  border-radius: var(--mono-radius) !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
   color: var(--mono-ink) !important;
   height: 36px;
   width: 36px;
 }
 
 .theme-btn:hover {
-  background: var(--mono-accent) !important;
-  border-color: var(--mono-accent) !important;
+  background: transparent !important;
+  border-color: transparent !important;
+  color: var(--mono-accent-dark) !important;
 }
 
 #hero {
