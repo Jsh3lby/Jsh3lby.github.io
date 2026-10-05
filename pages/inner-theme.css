@@ -814,3 +814,143 @@ html[data-theme="dark"] .archivo-page .timeline-date {
 .recursos-page .cta-section p {
   color: var(--inner-muted) !important;
 }
+
+/* Profile index: clear sections with the same editorial rhythm as Resources. */
+.sobre-mi-page .timeline {
+  max-width: var(--inner-max);
+  padding: 0;
+}
+
+.sobre-mi-page .timeline-item {
+  background: transparent !important;
+  border-top: 1px solid var(--inner-line);
+  margin-bottom: 0;
+  padding: 2.5rem 0 0;
+}
+
+.sobre-mi-page .timeline-item::before {
+  color: var(--inner-accent-dark);
+  content: attr(data-year);
+  display: block;
+  font-family: monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  margin-bottom: 0.7rem;
+  text-transform: uppercase;
+}
+
+.sobre-mi-page .timeline-item h3 {
+  color: var(--inner-ink) !important;
+  font-size: clamp(1.45rem, 3vw, 2.2rem);
+  letter-spacing: -0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.sobre-mi-page .profile-section-intro {
+  color: var(--inner-muted);
+  font-size: 0.9rem;
+  margin: 0 0 1.5rem;
+  max-width: 680px;
+}
+
+.sobre-mi-page .timeline-item ul {
+  display: block;
+}
+
+.sobre-mi-page .timeline-entry,
+.sobre-mi-page .timeline-entry:hover {
+  background: transparent !important;
+  border: 0 !important;
+  border-bottom: 1px solid var(--inner-line) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  transform: none;
+}
+
+.sobre-mi-page .timeline-date {
+  background: transparent !important;
+  border: 1px solid var(--inner-line);
+  border-radius: 0 !important;
+  color: var(--inner-muted) !important;
+  font-family: monospace;
+  font-size: 0.66rem;
+  padding: 0.4rem 0.5rem;
+  text-transform: uppercase;
+}
+
+.sobre-mi-page .timeline-content {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.sobre-mi-page .timeline-content h4 {
+  color: var(--inner-ink) !important;
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.sobre-mi-page .timeline-content p {
+  color: var(--inner-muted) !important;
+  line-height: 1.65;
+  margin: 0.75rem 0 1rem;
+  max-width: 780px;
+}
+
+.sobre-mi-page .tech-tags {
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.sobre-mi-page .tech-tags span {
+  background: transparent !important;
+  border: 1px solid var(--inner-line);
+  border-radius: 0 !important;
+  color: var(--inner-muted);
+  font-family: monospace;
+  font-size: 0.62rem;
+  padding: 0.35rem 0.5rem;
+}
+
+.sobre-mi-page .cta-button {
+  background: transparent !important;
+  border: 1px solid var(--inner-line) !important;
+  border-radius: 2px !important;
+  box-shadow: none !important;
+  color: var(--inner-ink) !important;
+  font-family: monospace;
+  font-size: 0.65rem !important;
+  padding: 0.55rem 0.7rem;
+  text-transform: uppercase;
+}
+
+.sobre-mi-page .cta-button:hover {
+  background: var(--inner-accent) !important;
+  border-color: var(--inner-accent) !important;
+  color: #10110f !important;
+}
+
+.sobre-mi-page > .cta-section {
+  background: transparent !important;
+  border-top: 1px solid var(--inner-line);
+  margin-top: 0;
+}
+
+.sobre-mi-page > .cta-section .cta-button {
+  background: var(--inner-accent) !important;
+  border-color: var(--inner-accent) !important;
+  color: #10110f !important;
+}
+
+@media (max-width: 560px) {
+  .sobre-mi-page .timeline-entry {
+    display: block;
+  }
+
+  .sobre-mi-page .timeline-date {
+    display: inline-block;
+    margin-bottom: 0.8rem;
+  }
+}
